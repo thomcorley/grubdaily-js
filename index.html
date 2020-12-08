@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>grubdaily &mdash; For tasty things </title>
+    <title>grubdaily-js</title>
     <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="tJ1PiEI9R81vWJyjtAdtBLeCJSV2F1+qonIuGePz++bcNS9RYD3rWxzPdLpPJ45HYqWVvP+5vfEAABwrV8v/nw==" />
 
@@ -38,70 +38,152 @@
   </head>
 
   <body>
-
       <header class="header clear">
         <div class="blog-info clear">
-            <a class="blog-logo" href="/">
-                <img alt="grubdaily" src="https://s3.eu-west-2.amazonaws.com/grubdaily/grubdaily_white.png" />
-</a>        </div>
-        <div class="navbar">
-          <div class="clear" style="display: flex;">
-            <nav role="navigation" class="mainmenu">
-              <ul class="clear">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/recipe_index">Recipe Index</a></li>
-                  <li><a href="/about">About</a></li>
-              </ul>
-            </nav>
-          </div>
+          <a class="blog-logo" href="/">
+              <img alt="grubdaily" src="https://s3.eu-west-2.amazonaws.com/grubdaily/grubdaily_white.png" />
+          </a>
         </div>
       </header>
     <section class="delicious">
   <main role="main">
     <section class="index" itemscope itemtype="http://schema.org/Blog">
-      <section class="newest-recipes clear">
-
-        <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-          <div class="post-excerpt">
-            <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/hake-confit-neeps-brown-butter.jpg" alt="Hake with Confit Neeps and Brown Butter" /></p>
-          </div>
-          <div class="details">
-            <h6 class="post-title first-post" itemprop="name headline">
-              <a itemprop="url" href="/hake-confit-neeps-brown-butter">Hake with Confit Neeps and Brown Butter</a>
-            </h6>
-
-            <div class="post-content">
-              <p><p>The neep, or swede, is a classic Scottish ingredient most commonly associated with <em>haggis neeps and tatties</em>, the national dish. For this f ...</p>
-</p>
-            </div>
-          </div>
-        </article>
-
-          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="post-excerpt">
-              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/mushroom-powder.jpg" alt="Mushroom Powder" /></p>
-            </div>
-            <div class="details">
-              <h6 class="post-title first-post" itemprop="name headline">
-                <a itemprop="url" href="/mushroom-powder">Mushroom Powder</a>
-              </h6>
-            </div>
-          </article>
-          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="post-excerpt">
-              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/roasted-cep-egg.jpg" alt="Roasted Cep and Egg" /></p>
-            </div>
-            <div class="details">
-              <h6 class="post-title first-post" itemprop="name headline">
-                <a itemprop="url" href="/roasted-cep-egg">Roasted Cep and Egg</a>
-              </h6>
-            </div>
-          </article>
-
-      </section>
 
       <section class="posts clear">
-        <div class="section-title"><span>Recent Recipes</span></div>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/cured-chicken-leg-jersey-royals">
+                Cured Chicken Leg with Jersey Royals
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/cured-chicken-leg-jersey-royals.jpg" alt="Cured Chicken Leg with Jersey Royals" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/brown-rice-mushroom-risotto">
+                Brown Rice and Mushroom Risotto
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/brown-rice-mushroom-risotto.jpg" alt="Brown Rice and Mushroom Risotto" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/pickled-girolles">
+                Pickled Girolles
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/pickled-girolles.jpg" alt="Pickled Girolles" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/salad-girolles">
+                Salad of Girolles
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/salad-girolles.jpg" alt="Salad of Girolles" /></p>
+            </div>
+          </article>
+
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/cured-chicken-leg-jersey-royals">
+                Cured Chicken Leg with Jersey Royals
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/cured-chicken-leg-jersey-royals.jpg" alt="Cured Chicken Leg with Jersey Royals" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/brown-rice-mushroom-risotto">
+                Brown Rice and Mushroom Risotto
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/brown-rice-mushroom-risotto.jpg" alt="Brown Rice and Mushroom Risotto" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/pickled-girolles">
+                Pickled Girolles
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/pickled-girolles.jpg" alt="Pickled Girolles" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/salad-girolles">
+                Salad of Girolles
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/salad-girolles.jpg" alt="Salad of Girolles" /></p>
+            </div>
+          </article>
+
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/cured-chicken-leg-jersey-royals">
+                Cured Chicken Leg with Jersey Royals
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/cured-chicken-leg-jersey-royals.jpg" alt="Cured Chicken Leg with Jersey Royals" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/brown-rice-mushroom-risotto">
+                Brown Rice and Mushroom Risotto
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/brown-rice-mushroom-risotto.jpg" alt="Brown Rice and Mushroom Risotto" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/pickled-girolles">
+                Pickled Girolles
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/pickled-girolles.jpg" alt="Pickled Girolles" /></p>
+            </div>
+          </article>
+          <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="post-title" itemprop="name headline">
+              <a itemprop="url" href="/salad-girolles">
+                Salad of Girolles
+              </a>
+            </h2>
+
+            <div class="post-content">
+              <p><img src="https://s3.eu-west-2.amazonaws.com/grubdaily/salad-girolles.jpg" alt="Salad of Girolles" /></p>
+            </div>
+          </article>
 
           <article class="post" role="article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
             <h2 class="post-title" itemprop="name headline">
@@ -188,7 +270,6 @@
 </svg>
 </a>
         </div>
-        <!-- <a class="view-all" href="/photos">Click here to see ALL photos</a> -->
       </section>
     </section>
   </main>
@@ -200,13 +281,8 @@
         <div class="footer-left-column">
             <a href="/">
                 <img width="80px" src="https://s3.eu-west-2.amazonaws.com/grubdaily/favicon_large.jpg" />
-</a>          <p>&copy; 2020</p>
-        </div>
-
-        <div class="footer-right-column">
-          <p><a href="/">Home</a></p>
-          <p><a href="/recipe_index">Recipe Index</a></p>
-          <p><a href="/about">About</a></p>
+            </a>
+            <p>&copy; 2020</p>
         </div>
       </div>
     </footer>
