@@ -1,6 +1,5 @@
-import recipes from "./recipes.js"
-
-const socialMediaSvgData = [
+export default
+[
   {
     "title":"facebook",
     "url":"https://facebook.com/grubdaily",
@@ -26,44 +25,3 @@ const socialMediaSvgData = [
     "path":"M6.4,0C9.3,0,12,2,12,5.1s-1.5,6.1-4.8,6.1A2.5,2.5,0,0,1,5,10.2c-0.7,2.8-.7,3.2-2.2,5.4H2.6c-0.1-.6-0.1-1.2-0.1-1.8S3.3,9.1,3.8,7.2a3.7,3.7,0,0,1-.3-1.6A2,2,0,0,1,5.2,3.5,1.2,1.2,0,0,1,6.4,4.8c0,1.2-.8,2.4-0.8,3.5A1.4,1.4,0,0,0,7,9.7C9.2,9.7,9.8,6.6,9.8,5S8.3,1.5,6.1,1.5A4.2,4.2,0,0,0,1.7,5.8a5.1,5.1,0,0,0,.7,2.1A1.3,1.3,0,0,1,2,9H1.8C0.5,8.6,0,6.8,0,5.6,0,2.1,3.2,0,6.4,0Z"
   },
 ]
-
-function displayThumbnail(recipe) {
-  const section = document.querySelector("section.posts.clear")
-  const article = document.createElement("article");
-
-  article.className = "post"
-
-  article.innerHTML = `
-    <div class="thumbnail">
-      <p><img src="${recipe.image}" alt="${recipe.name}" title="${recipe.name}"/></p>
-    </div>
-  `
-
-  section.appendChild(article)
-};
-
-
-function generateSocialMediaSvg(socialMediaDatum) {
-  const socialDiv = document.querySelector(".social.clear");
-  let anchorElement = document.createElement("a");
-  let datum = socialMediaDatum
-
-  anchorElement.setAttribute("href", datum.url)
-
-  anchorElement.innerHTML = `
-    <svg title="${datum.title}"
-      width="16"
-      height="16"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      id="${datum.title}-icon"
-      viewBox="${datum.viewBox}">
-      <path d="${datum.path}" />
-    </svg>
-  `
-
-  socialDiv.appendChild(anchorElement);
-}
-
-socialMediaSvgData.forEach(socialMediaDatum => generateSocialMediaSvg(socialMediaDatum));
-
-recipes.forEach(recipe => displayThumbnail(recipe));
