@@ -5,7 +5,7 @@ export default
     "@type":"Recipe",
     "name":"Cavolo Nero and Parmesan Salad",
     "author":"Tom Corley",
-    "image":"cavolo-nero-parmesan-salad.jpg",
+    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/cavolo-nero-parmesan-salad.jpg",
     "datePublished":"2020-10-02 21:18:59 UTC",
     "totalTime":"PT30M",
     "recipeYield":2,
