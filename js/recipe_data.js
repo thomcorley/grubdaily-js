@@ -1,196 +1,578 @@
 export default
+
 [
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Cavolo Nero and Parmesan Salad",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/cavolo-nero-parmesan-salad.jpg",
-    "datePublished":"2020-10-02 21:18:59 UTC",
-    "totalTime":"PT30M",
-    "recipeYield":2,
-    "description":"This is my favourite winter salad. It's amazingly savoury and in preparing the kale in 3 separate ways, there's a lovely texture contrast.",
-    "aggregateRating":{
-      "ratingValue":4,
-      "ratingCount":93
+    "id": 1,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Hake With Confit Neeps and Brown Butter",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/hake-confit-neeps-brown-butter.jpg",
+    "datePublished": "2020-12-10 19:49:04 UTC",
+    "totalTime": "PT1H30M",
+    "published": true,
+    "recipeYield": 2,
+    "description": [
+      "The neep (aka swede) is a classic Scottish ingredient most commonly associated with _haggis neeps and tatties_, the national dish. For this famous dish it's usually blended or crushed to a pulp with butter – much the same as one would make mashed potato – and it's really nice like this; the butter compliments the sweetness of the neeps, which are surprisingly sweet when cooked. I do, however, think it's underrated as an ingredient to be used in many other ways.",
+      "Restaurant Mark Greenaway, one of the places I worked, used to serve _confit neeps_. The neeps were cut into chunky oblongs and then slowly cooked in clarified butter. They were served simply with a fillet of hake topped with a herb crust. My version of hake-with-neeps is an improvement on Mark's version, I think, because I sauteed the confit neeps before serving, to bring some vital caramelisation to the party. Combined with the crunchy skin of the pan fried hake, I think you'll agree it's pretty excellent!",
+      "As for the sauce, brown butter (beurre noisette) is an easy option for any kind of fish, and something I often turn to. It ended up being almost a _sauce grenobloise_ after I added chopped lemon and capers. I finished the garnish with some cavolo nero and brown shrimp."
+    ],
+    "aggregateRating": {
+      "ratingValue": 5,
+      "ratingCount": 25
     },
-    "recipeIngredient":[
-      "200g cavolo nero","30g parmesan cheese, finely grated","1 clove of garlic, peeled and finely sliced","1 handful pine nuts","1 handful cashew nuts","1 handful pistachio nuts","1 stick celery, peeled","3 tablespoons extra virgin olive oil","2 teaspoons tarragon vinegar","sea salt and freshly cracked black pepper","vegetable oil, for frying"],"recipeInstructions":["Heat the oven to 200C and place a roasting tray inside to get hot. Remove and discard the tough inner stalks from the cavolo nero, then roughly chop the leaves into 2-3 inch long pieces. Once the roasting tray is hot, place one third of the cavolo nero in the tray and toss with 1 tablespoon of the olive oil. Season lightly with sea salt and place in the oven for 10 minutes.","From the remainder of the cavolo nero, take a small handful and finely chop. Set this aside - it will go in the salad, raw, at the end.","Take a frying pan or saute pan and place it over a medium heat. Add a little vegetable oil and, once it's hot, add the remaining cavolo nero and season lightly with sea salt. Stir and fry for 30 seconds, then add the sliced garlic. Continue to fry for 30 more seconds then add a glassful of water. Cover with a lid or some kitchen foil and steam until the cavolo nero is tender.","Check the cavolo nero in the oven. You want it to be crisp. If it's not quite there then give it a toss and return to the oven for 5 minutes. When it's done, remove from the tray and place on a plate lined with kitchen paper to drain.","Put the steamed cavolo nero in a mixing bowl and allow to cool. Roughly chop the cashews and pistachios to be about the same size at the pine nuts, then place in a pan over a medium-high heat and add a small pinch of salt. Dry roast until lightly golden, then add to the mixing bowl. Finely slice the celery at an angle and add to the bowl along with the raw cavolo nero you set aside earlier. Add most of the parmesan, saving about a quarter of it to put on top at the end. Add 2 tablespoons of olive oil and the tarragon vinegar, then mix everything together. Taste and season with salt and pepper if necessary. It might need more olive oil and/or vinegar, too. Serve in a bowl, with the crisp cavolo nero and the reserved parmesan on the top."]},
+    "tags": [
+      "fish",
+      "hake",
+      "neeps",
+      "Scottish"
+    ],
+    "recipeIngredient": [
+      "2 fillets of hake, about 150 g each",
+      "1\\2 medium neep (swede)",
+      "2 medium leaves cavolo nero, chopped",
+      "400 g unsalted butter",
+      "2 slices of lemon, cut into 5mm dice",
+      "1 tsp capers",
+      "2 tsp brown shrimp",
+      "vegetable oil, for frying",
+      "sea salt and freshly cracked black pepper"
+    ],
+    "recipeInstructions": [
+      "Place the fish out of the fridge to start coming to room temperature, and pat the skin dry with a cloth or a piece of kitchen towl. This will ensure it goes nice and crisp when you fry it.",
+      "Cut of 60g of butter for making the sauce later, then clarify the rest of it: put it in a saucepan and place over a low heat until it the fat has separated from the milky part. Carefully pour of the fat into another pan, and discard the milky bit. Peel the neep and cut into chunky oblongs about 2cm thick. Immerse them in the clarified butter and place over a medium-low heat. Cook gently; don't allow the butter to get too hot otherwise the neeps will start to fry. Cook for about 20-30 minutes or until they are tender, then remove from the pan and allow to cool. Once cool, cut the oblongs into dice.",
+      "Now cook the cavolo nero: place a saute pan or frying pan over a medium heat and add a splash of oil. When the oil is hot, add the cavolo nero along with a pinch of salt. Stir-and-fry for about 30 seconds, then add about half a glassful of water and put a lid on (use a piece of foil if you don't have a lid). Cook for 1-2 minutes, or until tender. Set aside.",
+      "Now for the fish: place a heavy-based frying pan over a high heat and allow to get hot. Add 2 tablespoons of oil. Wait for the oil to get hot; about 30 seconds. Season the fish all over with salt, then place in the pan, skin side down. Press gently to ensure the skin makes good contact with the surface of the pan. Keep the heat high for 30 seconds, then turn down to medium. Cook like this for about 3 minutes. You should be able to see that the flesh of the fish is about 3/4 cooked. At thisd point, add the 60g of reserved butter from earlier, and allow it to foam. Baste the fish for 1 minute. The fish should be cooked at this point. You can check if it's cooked by inserting a skewer: it should give no resistance. Remove the fish and set aside.",
+      "While the fish is cooking, fry the diced neep in a hot pan until caramelised, then set aside.",
+      "To finish the sauce, add the capers, lemons and brown shrimp. To serve, place the cavolo nero in the centre of the plate and put the neeps on top, followed by the sauce."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Sourdough",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/sourdough.jpg",
-    "datePublished":"2020-10-02 21:19:00 UTC",
-    "totalTime":"PT24H",
-    "recipeYield":"2 loaves",
-    "description":"This bread is a classic, crunchy sourdough. It's got a fantastic texture.",
-    "aggregateRating":{
-      "ratingValue":5,
-      "ratingCount":44
+    "id": 2,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Panzanella",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/panzanella.jpg",
+    "datePublished": "2020-12-10 19:48:54 UTC",
+    "totalTime": "PT45M",
+    "published": true,
+    "recipeYield": 2,
+    "description": [
+      "For me tomatoes are the highlight of summer. They are best, at their sweetest and juiciest, during the peak of the season, from June through to August. Panzanella is an old-school Italian peasant dish, making a spectacular combination of leftover scraps of stale bread and fresh, ripe tomatoes. Although probably classed as a salad, this amazing plate of food is, for me, often a meal in its own right.",
+      "The quality of bread is important; you want a crusty sourdough with big air pockets. Tear it into bite-sized chunks and leave them uncovered to go stale for a few days. They should be as hard as possible. The rest of the dish is based around a simple dressing made from the juice of the tomatoes: cut them into chunky pieces, season with sea salt and leave in a colander for 20 minutes. Squeezing them out with your hands releases the juices and you simply add vinegar and extra virgin olive oil to make a sharp, powerful dressing. The stale bread is then added to this to soak up all the flavour. It's amazing."
+    ],
+    "aggregateRating": {
+      "ratingValue": 5,
+      "ratingCount": 78
     },
-    "recipeIngredient":[
-      "450g strong white flour","350g sourdough starter","220g tepid water","1 tsp dried yeast","3 tbsp fine quality rapeseed oil","13g salt"],"recipeInstructions":["Pour the sourdough starter into a large bowl. Add the flour, salt and yeast on top, and mix briefly without disturbing the sourdough underneath.","Make a well in the middle of the flour mixture, and add the water and rapeseed oil. Using a sturdy wooden spoon, mix everything together thoroughly until you have a wet, sticky dough. Continue to mix for about 5 minutes. The dough should have become slightly elastic. Cover lightly with a cloth or cling film, and leave in a warm place to rise for 1 hour.","Turn the dough out onto a floured work surface and pat into an approximate rectangular shape. Take the two right hand corners, stretch them outwards, then fold back in to opposite corners. Repeat this with the left side, then turn the dough over, pat into a rectangle again and repeat once more. Place the dough back in the bowl, cover and leave _in the fridge_ overnight.","In the morning, repeat the folding and stretching process from Step 3, then cover and place back in the fridge for about 8 hours.","Turn the oven to 220C and put in your baking tray to get it nice and hot. Also place your roasting tray in the bottom to catch the water and create the steam. Dust your baker's linen or a thick kitchen cloth with flour, and place on a large chopping board or tray. Take the dough from the fridge and microwave at full power for 20 seconds. Scrape the dough onto a floured surface, place back in the bowl the other way up and give it another 20 seconds. The dough will now be warmed through, and rising nicely. There should be some visible air pockets forming. If you don't want to microwave it, simply leave it to come up to room temperature for about 2 hours.","Turn onto a floured surface and pat into a wide baguette shape about 30cm x 15cm. Cut it in half lengthways to create two thinner baguettes, and place each on the floured cloth, creating a fold in the centre to separate them, and something to weigh the edges down to stop the dough from spreading out. Boil a mugful of water in the kettle.","Once the oven is up to temperature, place each of the baguettes onto the tray. You'll find this easier if you can find a thin \"transfer\" spatula or paddle. A piece of thick cardboard would suffice. Using a sharp knife, score the baguettes across at an angle several times, then dust with a little flour. Place in the oven, then throw the mug of boiling water into the tray at the bottom and immediately close the door. Bake for 25 minutes, then turn around and give another 5 minutes. The loaves should be hollow when tapped underneath. Place on a wire rack to cool."]},
+    "tags": [
+      "tomatoes",
+      "panzanella",
+      "Italian"
+    ],
+    "recipeIngredient": [
+      "400g tomatoes, ripe (mixed varieties)",
+      "2 thick slices stale bread, torn into pieces",
+      "4 anchovies",
+      "1 yellow pepper",
+      "2 spring onions",
+      "2 handfuls basil leaves",
+      "4 tablespoons red wine vinegar",
+      "extra virgin olive oil",
+      "sea salt and freshly cracked black pepper"
+    ],
+    "recipeInstructions": [
+      "Heat the oven to 200C. Sprinkle the pepper with salt, then wrap in foil and place in the oven for around 30 minutes, until soft. Remove and allow to cool slightly before removing the seeds and peeling off the skin. Set aside.",
+      "While the pepper is cooking, roughly chop the tomatoes and generously sprinkle with sea salt. Transfer to a colander placed over a bowl for 20 minutes to allow the salt to draw the moisture out. Now squeeze the tomatoes gently with your hands into a bowl. Add the olive oil and red wine vinegar to the bowl, mix and taste it. It needs to be quite sharp to cut through the stale bread. Add the bread and leave to soak up the dressing for 10 minutes.",
+      "Finely slice the spring onions and add to the bowl with the bread. Rip the pepper into bite-sized pieces and add to the bowl too. Add the tomatoes, basil, anchovies and a sprinkling of cracked black pepper. Mix thoroughly. Taste and add more salt and/or olive oil if necessary. Serve immediately."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Lamb Chops with Spinach and Croutons",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/lamb-chops-spinach-croutons.jpg",
-    "datePublished":"2020-10-02 21:19:01 UTC",
-    "totalTime":"PT1H",
-    "recipeYield":2,
-    "description":"An excellent way to serve lamb chops that doesn't risk overcooking the tender loin meat",
-    "aggregateRating":{
-      "ratingValue":4.5,
-      "ratingCount":57
+    "id": 3,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Bacon and Pea Risotto",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/bacon-pea-risotto.jpg",
+    "datePublished": "2020-12-10 19:48:57 UTC",
+    "totalTime": "PT45M",
+    "published": true,
+    "recipeYield": 2,
+    "description": [
+      "The risotto remains one of my regular weeknight meals. It's quick to prepare and, to make a plain _risotto bianco_, requires only a few basic ingredients. It's what I call a 'store cupboard' meal, meaning that the ingredients it comprises all keep for a long time, either in the fridge or the cupboard, so you can always keep them in stock, waiting to be made into a delicious risotto at a moment's notice.",
+      "My [winter risotto](https://www.grubdaily.com/risotto-winter-greens) was essentially just a plain risotto with some cavolo nero added. I've taken a similar approach here, but with peas, to keep it seasonal. I've added some crisp bacon lardons for good measure. The salty savouriness of the bacon compliments the sweet peas perfectly and it provides a lovely colour contrast, too."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4,
+      "ratingCount": 85
     },
-    "recipeIngredient":[
-      "2 large lamb chops","1/2 onion, finely sliced","a handful of chunky croutons (preferably homemade)","2 handfuls of baby spinach","4 anchovy fillets","1 bunch flat leaf parsley, leaves picked","1 small clove garlic","a small amount of ground white pepper","sea salt and freshly cracked black pepper","tarragon vinegar (or white wine vinegar)","vegetable oil, for cooking"],"recipeInstructions":["Finely chop the parsley and garlic separately and then mix together to make some _persillade_. Set aside for later.","Prepare the lamb chops: separate the large chunk of fat from along the bone and cut it into approximately 1cm chunks. Leave the medallions of meat (from the eye of the chop) whole. Get a large, heavy-based pan and place over a high heat. When the pan is searing hot, season just the fat with sea salt and a little ground white pepper. Pour about 1 tablespoon of oil into the pan, wait abuot 10 seconds for the oil to heat up and add the lamb fat. Turn the heat to medium and continue to cook until it is brown and crisp.","Meanwhile, add 1 tablespoon of oil to a separate pan and place over a medium-high heat. Add the sliced onions along with a pinch of salt and fry until golden and caramelised. Add the spinach and cook until wilted. Set aside.","When the fat is nice and crisp, remove it from the pan and place in a bowl along with the spinach and caramelised onion. Discard most of the residual fat from the pan, then place back over the heat. Season the medallions of lamb cutlet with sea salt and a little white pepper, and sear in the pan. Cook briefly to keep the meat nice and pink (probably about 3 minutes), then add the persillade and toss everything for about 20 seconds. Remove from the pan and allow to rest for a few minutes.","To finish the dish, add the anchovy fillets and croutons to the bowl with the other ingredients, add about 1 teaspoon of vinegar and a generous pinch of cracked black pepper. Taste, and add more salt if necessary. Cut the medallions into 2cm chunks and mix in. Divide into plates and eat immediately."]},
+    "tags": [
+      "risotto",
+      "bacon",
+      "pea",
+      "italian"
+    ],
+    "recipeIngredient": [
+      "140g risotto rice",
+      "1 small onion, finely chopped",
+      "2 cloves garlic, finely chopped",
+      "1 glassful dry white wine",
+      "60g parmesan cheese, finely grated",
+      "40g unsalted butter, chopped",
+      "1 tablespoon extra virgin olive oil",
+      "sea salt and freshly cracked black pepper",
+      "200g garden peas, fresh or frozen",
+      "150g streaky bacon, cut into lardons",
+      "1 litre chicken stock",
+      "vegetable oil, for frying"
+    ],
+    "recipeInstructions": [
+      "The secret to a good risotto is to stir it continuouslyexit as the rice is cooking. This is the only way of getting the ultimate glossy and thick texture. You won't have time to do any prep at the same time so be sure to measure all the ingredients out and get everything chopped before you start.",
+      "Place a medium sized frying pan over a medium heat and put in about ½ tablespoon of vegetable oil. When the oil is hot, add the lardons and fry until crisp. Remove the lardons from the pan and set aside in a bowl. ",
+      "Now to start the risotto. Place a medium high-sided pot or pan over a medium high heat and add the olive oil. Wait until the oil is hot, about 1 minute, then add the onion and garlic along with a pinch of salt. Immediately turn down the heat and cook slowly for about 15 minutes, stirring occasionally, until the onions are soft and sweet. This is the _soffrito_.",
+      "Now turn the heat to high and add the rice. Stir vigorously for about 30 seconds to coat the rice in the flavour of the soffrito, then add the wine. Turn the heat to medium-high and continue to stir until all the liquid has gone. From this point the risotto will take about 15 minutes.Continue to add the chicken stock, 1 ladleful at  time, stirring continuously to massage and coax the starch from the rice. This creates the thick sauce of the risotto.",
+      "After about 15 minutes, the risotto should be ready. When you taste a grain of rice, there should be a _slight_ bite to it. If it's still quite hard, continue cooking for a bit longer. Turn the heat off, then add the chilled butter and parmesan gradually, whilst beating the risotto to emulsify it into a lovely creamy texture. If it seems too thick, add a bit of stock. As Giorgio Locatelli says 'It should ripple like waves on the sea'. If you run out of stock, just use boiling water.",
+      "At this point, add half of the peas to the risotto and stir through. Portion the risotto into bowls and garnish with the remaining peas and lardons. Finish with some parmesan shavings."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Super Spicy Kimchi",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/super-spicy-kimchi.jpg",
-    "datePublished":"2020-10-02 21:19:02 UTC",
-    "totalTime":"PT5D1H",
-    "recipeYield":"3 jars",
-    "description":"My favourite way to prepare cabbage, and probably the best fermented food product in the world.",
-    "aggregateRating":{
-      "ratingValue":4.5,
-      "ratingCount":82
+    "id": 4,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Cod with Cockles à la Crème",
+    "author": "Tom Corley",
+    "image": "https://grubdaily.s3.eu-west-2.amazonaws.com/cod_with_cockles_a_la_creme.jpg",
+    "datePublished": "2020-12-10 19:48:36 UTC",
+    "totalTime": "PT1H",
+    "published": true,
+    "recipeYield": 2,
+    "description": [
+      "In my mind, the main reason cockles are so great is not because of the excellent flavour of the actual cockle meat itself (which is excellent), but the strong flavoured liquid that results from cooking them. Just like it’s more glamorous relative the mussel, the cockle contains an abundance of naturally salty juices which are released into your saucepan when cooked. Enhanced with a little white wine, shallots and some aromatics like thyme or bay, the result is fantastically flavoursome, and served with some chips to dunk in the sauce, is a fine meal in itself.",
+      "Cockles are also a lovey accompaniment to fish. For this meal, I’ve reduced the liquor from the cockles by half, then added an equal quantity of double cream before reducing further to a fairly light but richly flavoured sauce. I’ve finished it with a nice chiffonade of parsley. The rest of the meal is pretty straight forward; crisp pan-fried cod fillets, and some crushed potatoes with spinach. Wonderful."
+    ],
+    "aggregateRating": {
+      "ratingValue": 5,
+      "ratingCount": 26
     },
-    "recipeIngredient":[
-      "1 napa cabbage","3 tablespoons good quality sea salt","1 bulb of garlic, cloves separated and peeled","3 tablespoons finely grated root ginger","1 teaspoon golden caster sugar","2 tablespoons fish sauce","1.5 tablespoons arbol chilli flakes","1.5 tablespoons ancho chilli flakes","1\\2 bunch spring onions","6 green finger chillies"],"recipeInstructions":["Firsty, salt the cabbage: remove the bottom 1cm of the cabbage and discard, then chop the rest into approx. 1 inch pieces. Place in a large bowl and sprinkle the salt over. Spend 5 minutes massaging the salt into the cabbage using your fingertips, then add enough cold water to just cover. Put a plate, or a heavy weight on top to ensure the cabbage is completely submerged, then leave at room temperature for 1.5 hours.","Rinse and drain the cabbage in a colander, reserving around 5 or 6 tablespoons of the salty water for later. Gently squeeze the cabbage with your hands to remove the excess water, then leave to drain.","Make the spice paste: Finely grate the garlic and place in a bowl along with the ginger, sugar, fish sauce, chilli flakes. Mix until you have a smooth paste. Mix the cabbage with the spice paste and massage with your fingertips again (use gloves if you're bothered about your hands getting stained and smelly!).","Sterilise the jars: you can do this by washing them in hot soapy water, then rinse, and, without drying, put straight into an oven at 180C for 20 minutes. Alternatively, just put them through the dishwasher.","Pack the kimchi into jars and press down until some liquid rises to the top to cover the kimchi, and leave 2cm of space at the top of the jar. If it's too dry, transfer the kimchi back to the bowl, mix in some of the salty water and put back into the jar.","Leave at room temperature for 2 - 5 days, depending on how much fermentation you want. The warmer it is, the faster the fermentation will be. I'd advise 5 days for a really strong savoury flavour. You should place the jars on a tray as some liquid will likely seep out. Open up the jars every 24 hours to allow the gases to escape. Once you have achieved your desired level of fermentation, put the jars into the fridge. The kimchi will continue to mature and will be best after a week or two but you can eat it immediately if you're too impatient!"]},
+    "tags": [
+      "fish",
+      "shellfish",
+      "cockles"
+    ],
+    "recipeIngredient": [
+      "250g fillet of cod, scaled and pin-boned",
+      "500g fresh cockles",
+      "50g baby shallots (about 2) finely chopped",
+      "80g spinach, washed",
+      "200g new potatoes",
+      "125ml (1 glassful) dry white wine",
+      "2 tbsp olive oil",
+      "vegetable oil, for cooking",
+      "sea salt",
+      "freshly cracked black pepper",
+      "1 bay leaf",
+      "2 sprigs thyme",
+      "1 bunch of parsley, leaves picked and finely chopped",
+      "100g double cream",
+      "10g butter",
+      "1 wedge of lemon"
+    ],
+    "recipeInstructions": [
+      "Cut the cod fillet into equal sized portions. Remove any bones, and carefully dry the skin with some kitchen paper. Leave it on a board skin side up, allowing it to dry out further. Thoroughly rinse the cockles in cold water.",
+      "Place the new potatoes in a medium pot and cover with cold water. Add a generous pinch of salt, and bring to the boil over a high heat. Turn down to a barely trembling simmer and cook for approximately 15 minutes, or until tender. You can check this easily by inserting a small knife into a potato; it should pass through with barely any resistance.",
+      "Meanwhile, to cook the cockles, place a medium sized pan over a medium-high heat and add the olive oil. Allow the oil to get hot, then add the shallots, thyme, bay, a pinch of salt and a generous pinch of cracked black pepper. Turn the heat to low and sweat the shallots slowly, stirring occasionally for about 10 minutes until soft and sweet. Now turn the heat to high. Drain the water off the cockles, then add to the pan. Stir once, then add the white wine. Cover with either a lid or some kitchen foil, and cook for 2-3 minutes, or until the cockles have all opened up. Strain the cockles through a fine sieve over a bowl, reserving the liquid. When the cockles have cooled, remove the cockle meat from the shells, and place in a bowl along with 10 shells, and most of the diced shallots. Discard the remainder of the shells. ",
+      "To make the sauce, transfer the cockle liquid to a saucepan and bring to the boil. Boil until it’s reduced by about half. Now add the cream, and continue to reduce until you have a nice sauce consistency. When ready, cover the pan tightly with clingfilm to avoid getting a skin, and set aside.",
+      "When the potatoes are done, drain and chop into chunks or crush with the pack of a spoon. Take another pan and place over a medium heat. Add a little vegetable oil and saute the spinach, along with a small pinch of salt, until wilted. Drain of any excess liquid, mix through the potatoes and set aside.",
+      "To cook the cod, take a large heavy based frying pan and get it smoking hot over a high heat. Add 1 tablespoon of vegetable oil and wait 10 seconds for it to get hot. Season the cod fillets all over with salt, and place in the pan, skin side down. Press the fillets gently for about 10 seconds to make the skin is lying flat. Turn the heat down to medium, and cook for around 3 minutes, depending on the thickness of the fillets. When the fillets are about two-thirds cooked, add the butter and allow it to foam, then squeeze in the lemon juice. Baste the fillets for about 1 minute until almost cooked, then flip them over, being careful not to break the skin. By this time the butter should have turned a nutty brown colour. Turn the heat off and leave in the pan for 30 seconds.",
+      "While the cod is cooking, get the other components of the dish nice and hot. Add the parsley and cockles (including shells) to the sauce. Put a pile of spinach and potatoes in the center of each plate, and 5 shells around. Pour the sauce and cockles over, and place the cod in the center."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Spaghetti Carbonara",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/spaghetti_carbonara.jpg",
-    "datePublished":"2020-10-02 21:19:02 UTC",
-    "totalTime":"PT20M",
-    "recipeYield":2,
-    "description":"This is surely the finest Italian dish on the planet.",
-    "aggregateRating":{
-      "ratingValue":5,
-      "ratingCount":82
+    "id": 5,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Pickled Mushrooms",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/pickled-girolles.jpg",
+    "datePublished": "2020-12-10 19:49:11 UTC",
+    "totalTime": "PT1D",
+    "published": true,
+    "recipeYield": "1 jar",
+    "description": [
+      "It has been a very successful mushrooming season so far, and I am now overrun with girolles. I have almost more than I know what to do with. To be honest, it's a nice problem to have! I could probably use them in about two weeks by eating them in various guises for breakfast, lunch _and_ dinner, but it would feel like a bit of a waste... I would like to extend the joy of eating these delicious mushrooms for as long as possible.",
+      "So I started researching different methods of preserving mushrooms. Drying was an obvious one: I oven-dried most of the scruffy ones and made powder from them; an intensely flavoured seasoning that's worth its weight in gold. Pickling is a popular method for preserving various vegetables, but it's not commonly applied to mushrooms. I gave it a go, and the result was pretty good. I didn't add salt to the pickling liquid as I feared it would break down the flesh of the mushroom too much, so the final product requires a sprinkling of sea salt to bring out the flavour properly.",
+      "I won't lie to you, these pickled mushrooms are quite intense and vinegary and are best enjoyed as an accompaniment to something else. They would be sublime in a bacon sandwich or a burger. You could even incorporate them into a salad. There are many possibilities. I advise using girolles for this, if you can source them, but it would work just as well with button mushrooms or chestnut mushrooms from the supermarket."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4.5,
+      "ratingCount": 28
     },
-    "recipeIngredient":[
-      "75g pancetta, diced into lardons","2 cloves of garlic, finely chopped","180g spaghetti","2 generous pinches of cracked black pepper","2 large eggs","30g parmesan, finely grated","sea salt","olive oil"],"recipeInstructions":["Get a large pan of water boiling to cook the pasta in. Add a couple of generous pinches of salt.","In a frying pan or sauté pan, heat a glug of olive oil and place over a medium heat. When the oil is hot, add the diced pancetta and fry until lightly caramelised. Turn the heat to low and add the chopped garlic, along with a pinch of cracked black pepper. Cook gently for 2 minutes, being careful not to burn the garlic, then remove from the heat and set aside.","Add the spaghetti to the boiling water and cook for _2 minutes less_ than it says on the packet's instructions. This is because after draining the pasta we're going to heat it again as we make the sauce, so it'll continue to cook.","While the pasta is cooking, start to prepare for the sauce; place the eggs into a jug or bowl and add most of the finely grated parmesan (leaving some for garnish at the end), along with a small pinch of sea salt.","When the pasta is about 2 minutes away, drain it over another jug or bowl, making sure you reserve about 200ml of water. Whisk the eggs and cheese together to make a thick paste, then pour about 4-5 tablespoons of the pasta water in, while still whisking. Now add the pancetta and garlic, pasta and egg mixture back into the pasta pan and place over a medium-low heat. Add about 100ml more of the pasta water and, using a plastic spatula, stir continuously, scraping the bottom of the pan until it's the texture of custard. Be very careful not to overheat it as the eggs will scramble. If it gets too thick, add a little more water - you should have a nice sauce consistency that just clings to the pasta.","Divide into pasta bowls, garnish with the remaining parmesan and eat immediately."]},
+    "tags": [
+      "mushrooms",
+      "pickling",
+      "preserving"
+    ],
+    "recipeIngredient": [
+      "350 g mushrooms, preferably girolles",
+      "700 ml white wine vinegar",
+      "800 ml water",
+      "1 sprig thyme",
+      "4 medium banana shallots, sliced into rings",
+      "10 peppercorns",
+      "1 blade mace",
+      "0.5 clove garlic"
+    ],
+    "recipeInstructions": [
+      "Place the mushrooms in a large bowl. When the liquid has boiled, pour it immediately over the mushrooms and cover, either with a lid or cling film. Leave to infuse at room temperature for 24 hours.",
+      "Place all the ingredients except the mushrooms in a pan, place over a medium-high heat and bring to the boil.",
+      "Put the mushrooms and all of the ingredients in a jar (or jars, if you do not have one that is big enough to fit all of them), and pour in enough of the pickling liquid to cover. Replace the lid, and store in the fridge. The pickled mushrooms will keep happily like this for several months (if you can avoid eating them for that long!)"
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Wood Blewits, Purple Potatoes and Steamed Hake",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/wood-blewits-purple-potatoes-steamed-hake.jpg",
-    "datePublished":"2020-10-02 21:19:03 UTC",
-    "totalTime":"PT1H30M",
-    "recipeYield":2,
-    "description":"Wood blewits are a very special mushroom and this is a wonderful way to prepare them.",
-    "aggregateRating":{
-      "ratingValue":4,
-      "ratingCount":75
+    "id": 6,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Spinach Puttanesca",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/lockdown-pasta-spinach-puttanesca.jpg",
+    "datePublished": "2020-12-10 19:49:16 UTC",
+    "totalTime": "PT45M",
+    "published": true,
+    "recipeYield": 2,
+    "description": [
+      "While this lockdown is still in place I'm working on the theme of tinned fish. Previously, I pointed out how well mackerel works as a preserved, tinned product. Part of the reason for this is that it's a particularly oily fish and it doesn't tend to be dry when cooked. It's also one of the most abundant fish in the ocean – especially around the british isles – so it's sustainable. Another fish which ticks these boxes is anchovies. Anchovies are one of the most abundant fish in the entire world. For sustainability points, they are hard to beat. They are also, of course, really really tasty.",
+      "Two things I've always been very fond of: 1) Pasta, and 2) bold, powerful flavours. Pasta puttanesca combines these two things in glorious fashion, so it's no surprise that it will almost certainly make it to my list of all time favourite pasta dishes.",
+      "This dish may not look much, but trust me, it packs a punch. Technically, this recipe isn't really a true puttanesca (I have a [previous post](https://www.grubdaily.com/pasta_puttanesca) where you can find a more traditional recipe). This one is a bastardized version of sorts, where tomatoes have been switched for spinach. The combination of spinach, anchovies and garlic is not a new one – these would be perfect accompaniments to a roast leg of lamb, for example, so it makes sense that this is a tasty combination for a pasta dish too.",
+      "This puttanesca is strong and powerful, so it goes best with a chunky pasta like rigatoni, but you can use whichever you like."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4.5,
+      "ratingCount": 74
     },
-    "recipeIngredient":[
-      "2 fillets of hake (about 150g each), skin removed","200g wood blewit mushrooms","200g small purple potatoes, peeled","2 medium leaves of cavolo nero (or 2 handfuls of spinach), torn into large pieces","sea salt and freshly cracked black pepper","fine quality extra virgin olive oil","30g of unsalted butter"],"recipeInstructions":["Firstly, set up the steamer: bring a large pot of water to boil, place the steamer on top and cover with the lid. Place the purple potatoes in a pot and cover with cold water.. Season with a generous pinch of salt and place over a medium-high heat. Bring to boil then turn down the heat and simmer gently for around 20 minutes or until they're tender. Remove from the heat and leave to cool in the water.","Before you begin cooking the mushrooms, wait for the potatoes to finish cooking because you're going to need the purple starchy water for the ragout. Cut the mushrooms into halves or quarters so you have pieces approximately the same size. Leave the smallest ones whole. Heat a saute pan over a medium heat and add about a teaspoon of the butter. Heat until the butter is foaming then add the mushrooms along with a pinch of salt. Toss or stir-and-fry over the heat for about a minute then add a couple of ladlefuls of the potato water, until the mushrooms are half-submerged. Partially cover with either a lid or a piece of foil, and simmer until the mushrooms are cooked; probably around 4-5 minutes. Drain in a colander when they're done, being sure to reserve the liquid.","Place the cavolo nero into the same saute pan with a glug of extra virgin olive oil and place over a medium heat. Add a pinch of salt and saute gently for 30 seconds. Add about 200ml of water and bring to the boil. Partially cover with a lid or a piece of foil and simmer until tender, about 5 minutes. Drain in a colander.","Cut the potatoes in halves or quarters to make bite-sized pieces. To finish, add the mushrooms, cavolo nero and potatoes to the same saute pan and add a ladleful of the potato cooking water. Bring to the boil then add the butter, a little at a time, until the sauce starts to thicken and becomes glossy. If it's too thick then add a little more of the starchy cooking water. Taste and adjust the seasoning if needed.","Take two pieces of baking parchment that are approximately the same size as the fillets of hake. Season the fillets of hake on both sides with sea salt and drizzle with a little olive oil. Place on the parchment, skin-side (the smoother side which had the skin on it before it was removed) up. Place in the steamer and cook for 3-4 minutes, depending on size, until just cooked through. The easiest way to check if the fish is cooked is to insert a small skewer or needle into the flesh: it's cooked if it passes through with virtually no resistance. Serve the mushroom ragout in bowls and place the steamed fish on top, finishing with a glug of extra virgin olive oil."]},
+    "tags": [
+      "pasta",
+      "puttanesca",
+      "Italian",
+      "spinach"
+    ],
+    "recipeIngredient": [
+      "190g pasta, preferably rigatoni",
+      "2 large handfuls of spinach, roughly chopped",
+      "1 tsp capers, chopped",
+      "4 fillets anchovies, roughly chopped",
+      "2 large cloves garlic, finely sliced or chopped",
+      "1/2 tsp arbol chilli flakes",
+      "1/2 tsp chipotle chilli flakes",
+      "2 tsp butter",
+      "parmesan cheese, for serving",
+      "extra virgin olive oil, for cooking",
+      "sea salt and cracked black pepper"
+    ],
+    "recipeInstructions": [
+      "Get a large pot of water boiling for the pasta. Season the water, then add the pasta, removing it when about 1 minute from being cooked. _Remember to reserve the cooking water as you will need it for making the sauce_.",
+      "Heat about 2 tablespoons of olive oil in a large heavy-based pan over a medium heat. Once the oil is hot, add the garlic along with a pinch of salt. Stir once, and cook for 20 seconds before adding the chilli flakes. Turn the heat to low and simmer gently for  2 minutes. Add the spinach, and stir-and-fry until wilted.",
+      "When the pasta is drained, add it to the pan with the spinach along with a ladleful of the starchy cooking liquid. Add the capers, anchovies and butter at this point, along with a generous pinch of cracked black pepper. Mix everything together vigorously for a couple of minutes – the pasta will finish cooking and some of its starch will be released into the water to thicken it. Add more of the cooking water if it's getting too thick.",
+      "Serve in bowls immediately, with grated parmesan on top."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Lockdown Pasta Spinach Puttanesca",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/lockdown-pasta-spinach-puttanesca.jpg",
-    "datePublished":"2020-10-02 21:19:04 UTC",
-    "totalTime":"PT30M",
-    "recipeYield":2,
-    "description":"An interesting take on the classic Italian dish",
-    "aggregateRating":{
-      "ratingValue":4.5,
-      "ratingCount":84
+    "id": 7,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Cured Chicken Leg with Butter Beans",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/cured-chicken-leg-butter-beans.jpg",
+    "datePublished": "2020-12-10 19:49:01 UTC",
+    "totalTime": "PT9H",
+    "published": true,
+    "recipeYield": 4,
+    "description": [
+      "This is a great way to cook a chicken leg that gets the best out of the skin by exploiting its crispy crunchy potential. I'm sure most of you will agree when I say the best part of a chicken is the crispy skin! The secret here is to lightly cure the chicken skin by sprinkling rock salt on it and leaving for about 8 hours. This draws moisture out of the skin, meaning that it goes amazingly crispy when you fry it, much the same as a confit duck leg. I make a simple spice rub with some olive oil, garlic and paprika and rub this into the flesh side. The result is amazing!",
+      "The butter bean stew is rustic and unfussy, reminiscent of a French cassoulet or a Spanish white bean stew. I've finished it with some fresh basil leaves and a drizzle of olive oil. Add a bottle of fresh white wine and you've got a perfect summer's evening meal.",
+      "You'll need to bone out the chicken leg, ideally with the skin intact, with no holes. It requires a bit of finesse. Alternatively, you could just use thighs instead, which are much easier."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4.5,
+      "ratingCount": 64
     },
-    "recipeIngredient":[
-      "180g pasta, preferably rigatoni","2 handfuls spinach","1 tsp capers, chopped","4 fillets anchovies","2 cloves garlic","1/2 tsp arbol chilli flakes","1/2 tsp chipotle chilli flakes","2 tsp butter","parmesan cheese, to serve","sea salt and freshly cracked black pepper"],"recipeInstructions":["Get a large pot of water boiling for the pasta. Season the water, then add the pasta, removing it when about 1 minute from being cooked. _Remember to reserve the cooking water as you will need it for making the sauce_.","Heat about 2 tablespoons of olive oil in a large heavy-based pan over a medium heat. Once the oil is hot, add the garlic along with a pinch of salt. Stir once, and cook for 20 seconds before adding the chilli flakes. Turn the heat to low and simmer gently for  2 minutes. Add the spinach, and stir-and-fry until wilted.","When the pasta is drained, add it to the pan with the spinach along with a ladleful of the starchy cooking liquid. Add the capers, anchovies and butter at this point, along with a generous pinch of cracked black pepper. Mix everything together vigorously for a couple of minutes: the pasta will finish cooking and some of its starch will be released into the water to thicken it. Add more of the cooking water if it's getting too thick.","Serve in bowls immediately, with grated parmesan on top."]},
+    "tags": [
+      "chicken",
+      "cured",
+      "butter beans"
+    ],
+    "recipeIngredient": [
+      "2 large chicken legs, bones removed",
+      "1 tbsp coarse rock salt",
+      "1 tbsp extra virgin olive oil, plus more for frying",
+      "2 tsp smoked paprika",
+      "200g dried butter beans",
+      "2 medium carrots, diced",
+      "50g pancetta, cut into chunky lardons",
+      "1 small onion, diced",
+      "3 cloves garlic, chopped",
+      "2 tsp worcester sauce",
+      "500ml chicken stock",
+      "2 tsp balsamic vinegar",
+      "2 tsp smoked paprika",
+      "50g chorizo, diced",
+      "1 bunch basil, leaves picked",
+      "sea salt and freshly cracked black pepper",
+      "vegetable oil, for frying"
+    ],
+    "recipeInstructions": [
+      "Take the boned out chicken legs and score the flesh side several times. This will allow the flavour of the spice rub to penetrate effectively. Take one of the cloves of garlic and crush it to a paste. Place in a small bowl with 1 teaspoon of smoked paprika. Mix to a thick paste, then add a generous pinch of sea salt and 1 tablespoon of olive oil. Mix well, then rub into the flesh side of the chicken legs. Place the legs on a plate, flesh side down, then sprinkle the rock salt evenly onto the skin side. Place in the fridge for 8 hours or overnight. Place the butter beans in a bowl and generously cover with cold water. Leave to soak, also for 8 hours or overnight.",
+      "For the butter bean stew, place a large heavy based pan or casserole dish over a medium/high heat and add a couple of glugs of olive oil. When the oil is hot, add the lardons and fry until lightly caramelised, then add the diced carrots along with a pinch of salt. Continue to fry over a medium/high heat until the carrots are beginning to colour. Turn the heat down to low and add the onion and garlic. Cook gently, stirring frequently, for about 5 minutes. The onion should be nice and soft and starting to turn sweet. Drain the butter beans thoroughly and add to the pot with the vegetables, along with the chicken stock, the remaining 1 teaspoon of smoked paprika and the worcester sauce. Bring to the boil, then turn to a gentle simmer for about 1 hour, or until the beans are tender but not falling apart. They may take longer depending on how dry/old the beans are.",
+      "For the chicken, it's a good idea to remove it from the fridge to wash the salt off and dry it about 30 minutes before you cook it. This will ensure the skin is really dry and ready to go, and it'll also bring the meat up to temperature a bit, allowing for more even cooking. Wash the salt from the skin side of the chicken under a running tap, being careful not to wash off the paprika on the other side. Take some kitchen paper and pat the skin as dry as you can get it.",
+      "Get a large heavy based frying pan or skillet and place it over a high heat. Add 2 or 3 tablespoons of olive oil and when it's hot, add the chicken, skin side down. Don't overcrowd the pan; if it's too small, do it in batches. Press the chicken gently to ensure the skin is lying flat, and cook like this for about 20 seconds. Now turn the heat to medium/low. Cook for about 5 minutes like this, ensuring that the heat isn't too high. You want the skin crispy, but not black! When you can see that the flesh side is about half cooked from beneath, flip the chicken and turn the heat right down. Cook for another 4 or 5 minutes, until the chicken is cooked through.",
+      "Finish the butter bean stew by adding the balsamic vinegar and diced chorizo and stir through. To serve, put a couple of ladlefuls of the stew into each bowl, then carve the chicken into strips. Divide between the bowls, and garnish with the basil leaves and a drizzle of extra virgin olive oil."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Cured Chicken Leg with Jersey Royals",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/cured-chicken-leg-jersey-royals.jpg",
-    "datePublished":"2020-10-02 21:19:05 UTC",
-    "totalTime":"PT10H",
-    "recipeYield":2,
-    "description":"This is currently my favourite way to prepare chicken legs, and it goes beautifully with Jersey Royal potatoes for a summer meal",
-    "aggregateRating":{
-      "ratingValue":5,
-      "ratingCount":76
+    "id": 8,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Lamb Chops with Spinach and Croutons",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/lamb-chops-spinach-croutons.jpg",
+    "datePublished": "2020-12-10 19:48:41 UTC",
+    "totalTime": "PT1H",
+    "published": true,
+    "recipeYield": 2,
+    "description": [
+      "Lamb chops are great, but admittedly they're not my favourite cut of lamb. Each lamb chop consists of a cutlet from the loin attached to its corresponding rib bone, usually with a gorgeous thick slab of back fat along the bone. It's _bovine_ equivalent is the celebrated and iconic beef rib roast. The loin, regardless of which animal it's from, is one of the tenderest and most prized cuts of meat around and I think it's a bit of a shame to prepare a loin of lamb as chops because they're hard to cook; you have to roast them with enough ferocity to get the fat nice and crisp without overcooking the meat. Because there's usually a large amount of fat this is virtually impossible. In my opinion, you'd be better to ask your butcher for a full rack of chops (cutlets) to roast whole or even take the loin completely off the bone before roasting like a steak. Both of these methods allow you to keep the meat nice and pink, which is how it is supposed to be.",
+      "To avoid this difficult situation I deboned the chops and left the meat as medallion-sized chunks. The fat, which is full of flavour and a _key_ part of this dish, I diced into 1cm chunks. I seasoned everything with crunchy sea salt and a little sprinkling of white pepper before searing in a very hot pan. The rest of the dish comprised some chunky croutons, made from my numerous leftover sourdough loaves, sauteed spinach and some anchovy fillets. Seasoned generously with cracked black pepper, sea salt and a splash of tarragon vinegar, it was very, very good."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4,
+      "ratingCount": 89
     },
-    "recipeIngredient":[
-      "2 whole chicken legs","100 g button mushrooms, cut in half","200 g Jersey Royal potatoes","2 large handfuls flat leaf parsley, leaves picked","2 cloves garlic","2 teaspoons extra virgin olive oil","2 tablespoons coarse rock salt","2 heaped teaspoons creme fraiche","2 teaspoons fine quality Hungarian paprika","1 teaspoon butter","vegetable oil, for frying","sea salt and cracked black pepper"],"recipeInstructions":["Firstly, prepare the chicken. Using a sharp boning knife, carefully remove the bones without breaking the skin. Also remove any gristle or sinew. Make a marinade with half of the paprika, half of the garlic and all of the extra virgin olive oil. It should be like a paste: add more paprika if it's too thin. Rub this into the meat of the chicken legs (not the skin) . Lay the chicken legs on a tray skin-side down and sprinkle the rock salt over. Place, uncovered, in the fridge for 6 hours.","Remove the chicken legs from the fridge and carefully wash off the salt from the skin, being careful not to wash the marinade from the other side. Dry the skin thoroughly, then set aside.","To cook the potatoes: put them in a pot, add a generous pinch of salt and cover with cold water. Bring to the boil, then simmer very gently for about 15-20 minutes or until they are tender. Meanwhile, make the _persillade:_ take half of the parsley leaves and finely chop them. Finely chop the rest of the garlic too, and mix with the finely chopped parsley. Set aside.","To make the crisp fried parsley: add enough vegetable oil to a small frying pan so that it's about 5mm deep, wait for it to heat up (probably 1-2 minutes), then add the parsley. Stir and fry until there are no more bubbles coming from them – this means the water content is almost zero and they will be crisp. Drain in a colander first, then a plate lined with kitchen paper to remove the excess oil. Sprinkle with a little sea salt.","When the potatoes are a few minutes away from ready, cook the mushrooms: heat the butter in a frying pan, and when it is foaming, add the mushrooms. Cook until they are tender, then remove from the heat and set aside while you cook the chicken.","For cooking the chicken: heat a large, heavy-based pan or skillet over a high heat. The pan should be big enough to easily fit in both of the deboned chicken legs. Add about 2 tablespoons of vegetable oil and wait until it is hot (about 30 seconds), and then add the chicken, skin-side down. Press the chicken flat against the surface of the pan to ensure even contact, then turn the heat down to medium-high. Season the marinaded side of the chicken lightly with sea salt. Cook until the skin side is very golden and crisp, and the marinated side is about three-quarters cooked, then flip over and finish cooking on the marinated side for a few minutes. At this point, add the potatoes and persillade to the pan you cooked the mushrooms in and fry gently over a medium heat to cook out the garlic.","When the chicken is ready, carve it into strips. Serve on top of the potatoes and mushrooms, with a dollop of creme fraiche on the side, finally garnishing with a sprinkle of paprika and the crisp parsley leaves."]},
+    "tags": [
+      "lamb",
+      "spinach",
+      "croutons",
+      "loin",
+      "chops"
+    ],
+    "recipeIngredient": [
+      "2 large lamb chops",
+      "1/2 onion, finely sliced",
+      "a handful of chunky croutons (preferably homemade)",
+      "2 handfuls of baby spinach",
+      "4 anchovy fillets",
+      "1 bunch flat leaf parsley, leaves picked",
+      "1 small clove garlic",
+      "a small amount of ground white pepper",
+      "sea salt and freshly cracked black pepper",
+      "tarragon vinegar (or white wine vinegar)",
+      "vegetable oil, for cooking"
+    ],
+    "recipeInstructions": [
+      "Finely chop the parsley and garlic separately and then mix together to make some _persillade_. Set aside for later.",
+      "Prepare the lamb chops: separate the large chunk of fat from along the bone and cut it into approximately 1cm chunks. Leave the medallions of meat (from the eye of the chop) whole. Get a large, heavy-based pan and place over a high heat. When the pan is searing hot, season just the fat with sea salt and a little ground white pepper. Pour about 1 tablespoon of oil into the pan, wait abuot 10 seconds for the oil to heat up and add the lamb fat. Turn the heat to medium and continue to cook until it is brown and crisp.",
+      "Meanwhile, add 1 tablespoon of oil to a separate pan and place over a medium-high heat. Add the sliced onions along with a pinch of salt and fry until golden and caramelised. Add the spinach and cook until wilted. Set aside.",
+      "When the fat is nice and crisp, remove it from the pan and place in a bowl along with the spinach and caramelised onion. Discard most of the residual fat from the pan, then place back over the heat. Season the medallions of lamb cutlet with sea salt and a little white pepper, and sear in the pan. Cook briefly to keep the meat nice and pink (probably about 3 minutes), then add the persillade and toss everything for about 20 seconds. Remove from the pan and allow to rest for a few minutes.",
+      "To finish the dish, add the anchovy fillets and croutons to the bowl with the other ingredients, add about 1 teaspoon of vinegar and a generous pinch of cracked black pepper. Taste, and add more salt if necessary. Cut the medallions into 2cm chunks and mix in. Divide into plates and eat immediately."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Panzanella",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/panzanella.jpg",
-    "datePublished":"2020-10-02 21:19:06 UTC",
-    "totalTime":"PT45M",
-    "recipeYield":2,
-    "description":"A glorious combination of ripe tomatoes and stale bread",
-    "aggregateRating":{
-      "ratingValue":4.5,
-      "ratingCount":60
+    "id": 9,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Peanut Caramel Cheesecake",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/peanut_caramel_cheesecake.jpg",
+    "datePublished": "2020-12-10 19:49:09 UTC",
+    "totalTime": "PT2H",
+    "published": true,
+    "recipeYield": 8,
+    "description": [
+      "This is another one for all the peanut butter lovers out there, and in fact I’d be willing to bet that even peanut butter haters will enjoy this dessert. There’s something about the flavour and texture of peanut butter that makes it quite uncompromising; for some, the richness is too much on its own, and is only palatable when paired with something sweet. In the contest to be the most loved peanut butter dish, the old-school favourite _peanut butter and jam_ is arguably winning. I would, however, argue that this cheesecake beats it hands-down.",
+      "Broadly speaking, there are two classes of cheesecake: baked, and unbaked. This one falls into the latter (slightly quicker and easier) option. The general technique for the filling is very simple; make a thick puree (peanut caramel in this case, although strawberry, raspberry or chocolate also work well), and mix in cream cheese. Now simply soft-peak-whip some cream and gently fold in.",
+      "This cheesecake is mousse-like in texture and rich in taste. The biscuit base provides a nice contrast to the creamy-cheesy peanut mix that sits atop. Traditionally, Digestive biscuits have been used for a cheesecake base, but why use Digestives when you could use Hobnobs instead? After all, they taste better and it’s what [Delia](https://www.deliaonline.com/) would do."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4,
+      "ratingCount": 64
     },
-    "recipeIngredient":[
-      "400g tomatoes, ripe (mixed varieties)","2 thick slices stale bread, torn into pieces","4 anchovies","1 yellow pepper","2 spring onions","2 handfuls basil leaves","4 tablespoons red wine vinegar","extra virgin olive oil","sea salt and freshly cracked black pepper"],"recipeInstructions":["Heat the oven to 200C. Sprinkle the pepper with salt, then wrap in foil and place in the oven for around 30 minutes, until soft. Remove and allow to cool slightly before removing the seeds and peeling off the skin. Set aside.","While the pepper is cooking, roughly chop the tomatoes and generously sprinkle with sea salt. Transfer to a colander placed over a bowl for 20 minutes to allow the salt to draw the moisture out. Now squeeze the tomatoes gently with your hands into a bowl. Add the olive oil and red wine vinegar to the bowl, mix and taste it. It needs to be quite sharp to cut through the stale bread. Add the bread and leave to soak up the dressing for 10 minutes.","Finely slice the spring onions and add to the bowl with the bread. Rip the pepper into bite-sized pieces and add to the bowl too. Add the tomatoes, basil, anchovies and a sprinkling of cracked black pepper. Mix thoroughly. Taste and add more salt and/or olive oil if necessary. Serve immediately."]},
+    "tags": [
+      "dessert",
+      "cheesecake",
+      "peanut",
+      "caramel"
+    ],
+    "recipeIngredient": [
+      "270g condensed milk",
+      "145g smooth peanut butter",
+      "125g golden syrup",
+      "110g unsalted butter",
+      "250g cream cheese",
+      "250g whipping cream",
+      "50g flaked almonds, finely chopped",
+      "70g unsalted butter",
+      "175g Hob Nob biscuits (or Digestives)"
+    ],
+    "recipeInstructions": [
+      "To make the peanut caramel; place the condensed milk, peanut butter, golden syrup and 110g of butter in a pan over a medium heat and stir until melted. Continue to cook for 5 minutes, until almost bubbling and the caramel has thickened a little. Remove from heat and allow to cool to room temperature.",
+      "Grease the inside of the cake ring lightly with vegetable oil or butter and line with a strip of greaseproof paper.",
+      "Crush the Hob Nob biscuits to a breadcrumb-like consistency, and place in a bowl along with the chopped almonds. Melt the 70g of butter, and mix thoroughly with the biscuit mix. Empty the biscuit mix into the cake ring and press into an even layer, smoothing it out with the back of a spoon. Place in the fridge to set.",
+      "Once the peanut caramel has cooled to room temperature, transfer it into a mixing bowl. Use a plastic spatula to ensure you don’t waste any of it! Now add the cream cheese and mix until thoroughly incorporated. In a separate bowl, whip the cream until soft peaks form when you lift up the whisk. Fold the cream gently into the peanut and cheese mixture in 3 stages, ensuring that each stage is completely mixed before adding the next.",
+      "Spoon the cheesecake mixture into the cake ring, and place the whole thing in the fridge to set for at least 2 hours."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Banana Bread",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/banana-bread.jpg",
-    "datePublished":"2020-10-02 21:19:06 UTC",
-    "totalTime":"PT30M",
-    "recipeYield":1,
-    "description":"This is my favourite thing to do with bananas. I'll often purposefully let the bananas over ripen so I can make banana bread.",
-    "aggregateRating":{
-      "ratingValue":4.5,
-      "ratingCount":63
+    "id": 10,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Dal Makhani",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/dal-makhani.jpg",
+    "datePublished": "2020-12-10 19:49:15 UTC",
+    "totalTime": "PT3H",
+    "published": true,
+    "recipeYield": 4,
+    "description": [
+      "Dal is the Indian name given to lentils or beans. In India you can find a huge variety, and many more delicious savory concoctions made from them. When I visited the country, I was astounded at the depth of flavour that could be found in  a _dal_; they were undeniably tasty, and had a powerful savoriness that I had previously thought wasn't possible in a dish with no meat.",
+      "As lentils and beans are relatively inexpensive, they are used in everyday meals for lunch and dinner. This dal, made from black _urid beans_ however, is a bit more special. Due to the toughness of these beans, they must be soaked for several hours, then slowly simmered over a gentle heat for several hours more. Of course, a customary mixture of garlic, onion and spices is added to the mixture, and the result is a dark earthy bean stew that has a hint of smokiness. It's very rich, there's no denying it, so I have finished it with a swirl of yoghurt and some freshly chopped coriander."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4.5,
+      "ratingCount": 54
     },
-    "recipeIngredient":[
-      "125g salted butter","125g caster sugar","1 tsp vanilla extract","1 large egg, beaten","2 large ripe bananas, the riper the better","190g self raising flour","½ tsp baking powder","60ml whole milk","¼ tsp icing sugar, for dusting"],"recipeInstructions":["Heat the oven to 175C and line a 1kg loaf tin with baking parchment.","Place the butter, sugar and vanilla essence in a pot and melt over a medium heat, stirring frequently. Add the bananas and egg and mix. Now add the flour and milk, and mix thoroughly to combine. Pour everything into the lined loaf tin then immediately place in the center of the oven. Cook for around 30-40 minutes. To test if it's cooked, insert a skewer into the centre of the loaf; if it comes out with no raw batter stuck to it then it's ready. Remove from the oven and cool on a wire rack. Use a small sieve to dust the top with the icing sugar."]},
+    "tags": [
+      "curry",
+      "beans",
+      "dal"
+    ],
+    "recipeIngredient": [
+      "200g urid beans, soaked in water for at least 6 hours",
+      "30g unsalted butter",
+      "1 large onion, finely chopped",
+      "5 cloves garlic, finely chopped",
+      "20g root ginger, grated to a pulp",
+      "3 tbsp tomato puree",
+      "1 ¼ tsp salt",
+      "½ tsp cayenne pepper",
+      "¼ tsp ground asafoetida",
+      "1 tsp ground coriander",
+      "1 tsp ground cumin",
+      "½ tsp garam masala",
+      "15g unsalted butter",
+      "1 bunch fresh coriander",
+      "3 tbsp natural yoghurt"
+    ],
+    "recipeInstructions": [
+      "Drain the beans and rinse. Place in a pot and add water until just covered. Add ½ tsp salt, then bring to the boil, skimming off and discarding all the scum that rises. Simmer gently for 45 mins, topping up with water if necessary.",
+      "While the beans are simmering, add the 30g of butter to a separate pot and place over a medium heat. Once the butter has melted, add the onions and ¼ tsp salt. Turn the heat to low and fry gently for 20 minutes until soft and sweet. Add the garlic and ginger and continue to cook for a further 5 minutes. Now add the tomato puree, cayenne pepper, asafoetida, ground cumin, ground coriander. Stir thoroughly and cook for a further 5 minutes on a low heat. Now add the beans, the remaining ½ tsp of salt 300ml water. Bring to the boil, then turn to a gentle simmer and cook, stirring frequently, for 2 hours, topping up with water if necessary. By the end, it should be dark in colour and fairly thick; almost but not quite as thick as porridge.",
+      "To finish, add the 15g butter and mix vigorously to thicken the dal. If, at this point, it seems too thick just add a splash of water. Mix the yoghurt in at the last second to create a marble effect. Roughly chop the coriander and scatter over, along with the garam masala."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Ricotta and Herb Dumplings",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/ricotta-herb-dumplings.jpg",
-    "datePublished":"2020-10-02 21:19:08 UTC",
-    "totalTime":"PT4H",
-    "recipeYield":3,
-    "description":"This is a lovely way to serve ricotta. It's better to make your own as it will be firmer and easier to form into balls.",
-    "aggregateRating":{
-      "ratingValue":4.5,
-      "ratingCount":58
+    "id": 11,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Ricotta and Herb Dumplings",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/ricotta-herb-dumplings.jpg",
+    "datePublished": "2020-12-10 19:49:00 UTC",
+    "totalTime": "PT4H",
+    "published": true,
+    "recipeYield": 3,
+    "description": [
+      "A while ago I decided to try my hand at cheesemaking - as a devoted lover of cheese I think it was inevitable that I would try to make my own sooner or later. The obvious starting point for any amateur cheesemaker is ricotta. It's the simplest of cheeses - simply add something acidic, such as lemon juice, to some milk to split it into its constituent parts, and drain. Season the resulting drained curds with some sea salt and you're done; it's that easy. The nice thing about ricotta is that it's typically made with either lemon juice or vinegar, rather than rennet like most other cheeses, so you don't need any specialist ingredients.",
+      "This dish was inspired by a recipe for a Corsican/Italian dish called _strozapretti_, which consists of rustic ricotta dumplings loaded with chopped fresh herbs and chard. It's like ravioli but without the pasta. Normally, the dumplings would be fairly rough and imperfect in shape, but I have shaped mine nicely into rounds. I've also baked them in the oven until golden, which is great with the grated parmesan on top.  Baked in a rich tomato sauce, it's pretty irresistible!",
+      "The ricotta for this recipe should be quite firm, which is easy to achieve if you make your own. Click [here](https://www.grubdaily.com/ricotta) for my own ricotta recipe. Alternatively, you can use shop-bought ricotta and drain it overnight in a fine sieve."
+    ],
+    "aggregateRating": {
+      "ratingValue": 4.5,
+      "ratingCount": 38
     },
-    "recipeIngredient":[
-      "200g firm ricotta","80g baby spinach","1 small bunch of mint, leaves picked","1 small bunch of basil, leaves picked","25g parmesan, finely grated","½ tbsp extra virgin olive oil","3 tbsp plain flour","1 egg","2 tins of chopped plum tomatoes","1 small onion, finely chopped","1 clove garlic, finely chopped or grated","1 sprig of thyme","sea salt and cracked black pepper","vegetable oil, for frying","olive oil, for frying"],"recipeInstructions":["Place a saute pan over a medium heat and add a little vegetable oil. When the oil is hot, add the spinach along with a small pinch of salt. Saute until the spinach is wilted, then drain in a sieve.","Reserve a selection of the nicest, smallest basil leaves for garnish at the end. Finely chop the mint and roughly chop the remainder of the basil, then place in a bowl. Add the ricotta, flour and egg to the bowl also.","When the spinach is cool enough to handle, with clean hands squeeze as much liquid out of the spinach as possible, then roughly chop and add to the bowl with the ricotta along with a generous pinch of black pepper, and sea salt to taste.","Line a large tray with greaseproof paper, then divide the ricotta mix into equal portions. Shape each portion into an approximate ball shape and set on the tray. The balls will be quite sticky but don't worry, we're going to re-shape them before cooking. Place the balls in the fridge to cool for 3 hours.","Meanwhile, make your tomato sauce: heat a medium pot or saute pan over a medium heat and add 1 tablespoon of olive oil, once it's hot, add the onion and garlic and a couple of pinches of salt and cracked black pepper. Sweat gently for 10 minutes until soft, then add the tomatoes and thyme. Turn the heat to low, and simmer gently for 20-30 minutes. It should have turned darker and richer. Remove from the heat and discard the sprig of thyme.","Get a large pan of water boiling on the stove and season it generously with salt. Remove the balls from the fridge and, with floured hands shape them into nice round dumpling shapes. With the water at a rolling boil, cook the dumplings 3 or 4 at a time. The water should barely stop boiling when you add each batch. After they float to the surface cook for a further 30 seconds then remove and drain in a colander.","Heat the oven to 180C. In a casserole dish or oven-proof bowl, pour in the tomato sauce and add the dumplings. Scatter over the parmesan then place in the oven for 25-30 minutes, until the dumplings are lightly browned.","Garnish with the reserved basil leaves and serve."]},
+    "tags": [
+      "italian",
+      "ricotta",
+      "cheese",
+      "tomato",
+      "summer",
+      "herbs"
+    ],
+    "recipeIngredient": [
+      "200g firm ricotta",
+      "80g baby spinach",
+      "1 small bunch of mint, leaves picked",
+      "1 small bunch of basil, leaves picked",
+      "25g parmesan, finely grated",
+      "½ tbsp extra virgin olive oil",
+      "3 tbsp plain flour",
+      "1 egg",
+      "2 tins of chopped plum tomatoes",
+      "1 small onion, finely chopped",
+      "1 clove garlic, finely chopped or grated",
+      "1 sprig of thyme",
+      "sea salt and cracked black pepper",
+      "vegetable oil, for frying",
+      "olive oil, for frying"
+    ],
+    "recipeInstructions": [
+      "Place a saute pan over a medium heat and add a little vegetable oil. When the oil is hot, add the spinach along with a small pinch of salt. Saute until the spinach is wilted, then drain in a sieve.",
+      "Reserve a selection of the nicest, smallest basil leaves for garnish at the end. Finely chop the mint and roughly chop the remainder of the basil, then place in a bowl. Add the ricotta, flour and egg to the bowl also.",
+      "When the spinach is cool enough to handle, with clean hands squeeze as much liquid out of the spinach as possible, then roughly chop and add to the bowl with the ricotta along with a generous pinch of black pepper, and sea salt to taste.",
+      "Line a large tray with greaseproof paper, then divide the ricotta mix into equal portions. Shape each portion into an approximate ball shape and set on the tray. The balls will be quite sticky but don't worry, we're going to re-shape them before cooking. Place the balls in the fridge to cool for 3 hours.",
+      "Meanwhile, make your tomato sauce: heat a medium pot or saute pan over a medium heat and add 1 tablespoon of olive oil, once it's hot, add the onion and garlic and a couple of pinches of salt and cracked black pepper. Sweat gently for 10 minutes until soft, then add the tomatoes and thyme. Turn the heat to low, and simmer gently for 20-30 minutes. It should have turned darker and richer. Remove from the heat and discard the sprig of thyme.",
+      "Get a large pan of water boiling on the stove and season it generously with salt. Remove the balls from the fridge and, with floured hands shape them into nice round dumpling shapes. With the water at a rolling boil, cook the dumplings 3 or 4 at a time. The water should barely stop boiling when you add each batch. After they float to the surface cook for a further 30 seconds then remove and drain in a colander.",
+      "Heat the oven to 180C. In a casserole dish or oven-proof bowl, pour in the tomato sauce and add the dumplings. Scatter over the parmesan then place in the oven for 25-30 minutes, until the dumplings are lightly browned.",
+      "Garnish with the reserved basil leaves and serve."
+    ]
+  },
   {
-    "@context":"http://schema.org",
-    "@type":"Recipe",
-    "name":"Cured Chicken Leg with Butter Beans",
-    "author":"Tom Corley",
-    "image":"https://s3.eu-west-2.amazonaws.com/grubdaily/cured-chicken-leg-butter-beans.jpg",
-    "datePublished":"2020-10-02 21:19:09 UTC",
-    "totalTime":"PT9H",
-    "recipeYield":4,
-    "description":"This is currently my favourite way to prepare a chicken leg.",
-    "aggregateRating":{
-      "ratingValue":4,
-      "ratingCount":57
+    "id": 12,
+    "@context": "http://schema.org",
+    "@type": "Recipe",
+    "name": "Provençal Fish Soup",
+    "author": "Tom Corley",
+    "image": "https://s3.eu-west-2.amazonaws.com/grubdaily/provencal-fish-soup.jpg",
+    "datePublished": "2020-12-10 19:49:17 UTC",
+    "totalTime": "PT14H",
+    "published": true,
+    "recipeYield": 6,
+    "description": [
+      "When I mention fish soup to my friends they typically turn up their noses. I think the first thing that comes to their minds is some kind of unappetising greyish slop, but this one is about as far from that image as you could get! This recipe has its roots in Provence, in the south of France. It's a two-day affair; first you have to diligently clean the fish and rinse them under running water before marinating overnight in olive oil, a selection of herbs and spices, and a _mire poix_ of vegetables. This marinating really makes a difference to the depth of flavour - I recommend you don't omit this step. The spices (saffron and paprika) give the soup an inviting golden colour.",
+      "In the restaurant we would order 'fish soup mix' from our fishmonger and they would provide us with a nice range of small fish such as gurnard, mullet, hake or john dory. They were too small to be worth selling on their own as there would be hardly any meat on them, but they were perfect for soup. Luckily I live only a ten minute walk from the harbour, and there is a fishmonger right there on the waterfront. Unfortunately they didn't have any fish-soup-sized fish in stock, so I took one small sea bream and one small sea bass instead.",
+      "For extra savory punch I begin the soup by frying anchovies to create a sticky, salty base. While the fish are roasting in the oven I add the vegetables to the pan and cook them down until soft and sweet. I also add a tin of cooked sardines. The oily fish gives an extra richness. The amazing thing about this soup is everything is pureed, bones included, to create quite a thick, substantial meal. It's perfect served with black olive tapenade on toast. It really is an amazing dish and I promise that you'll see fish soup in a different light after eating this!"
+    ],
+    "aggregateRating": {
+      "ratingValue": 4,
+      "ratingCount": 63
     },
-    "recipeIngredient":[
-      "2 large chicken legs, bones removed","1 tbsp coarse rock salt","1 tbsp extra virgin olive oil, plus more for frying","2 tsp smoked paprika","200g dried butter beans","2 medium carrots, diced","50g pancetta, cut into chunky lardons","1 small onion, diced","3 cloves garlic, chopped","2 tsp worcester sauce","500ml chicken stock","2 tsp balsamic vinegar","2 tsp smoked paprika","50g chorizo, diced","1 bunch basil, leaves picked","sea salt and freshly cracked black pepper","vegetable oil, for frying"],"recipeInstructions":["Take the boned out chicken legs and score the flesh side several times. This will allow the flavour of the spice rub to penetrate effectively. Take one of the cloves of garlic and crush it to a paste. Place in a small bowl with 1 teaspoon of smoked paprika. Mix to a thick paste, then add a generous pinch of sea salt and 1 tablespoon of olive oil. Mix well, then rub into the flesh side of the chicken legs. Place the legs on a plate, flesh side down, then sprinkle the rock salt evenly onto the skin side. Place in the fridge for 8 hours or overnight. Place the butter beans in a bowl and generously cover with cold water. Leave to soak, also for 8 hours or overnight.","For the butter bean stew, place a large heavy based pan or casserole dish over a medium/high heat and add a couple of glugs of olive oil. When the oil is hot, add the lardons and fry until lightly caramelised, then add the diced carrots along with a pinch of salt. Continue to fry over a medium/high heat until the carrots are beginning to colour. Turn the heat down to low and add the onion and garlic. Cook gently, stirring frequently, for about 5 minutes. The onion should be nice and soft and starting to turn sweet. Drain the butter beans thoroughly and add to the pot with the vegetables, along with the chicken stock, the remaining 1 teaspoon of smoked paprika and the worcester sauce. Bring to the boil, then turn to a gentle simmer for about 1 hour, or until the beans are tender but not falling apart. They may take longer depending on how dry/old the beans are.","For the chicken, it's a good idea to remove it from the fridge to wash the salt off and dry it about 30 minutes before you cook it. This will ensure the skin is really dry and ready to go, and it'll also bring the meat up to temperature a bit, allowing for more even cooking. Wash the salt from the skin side of the chicken under a running tap, being careful not to wash off the paprika on the other side. Take some kitchen paper and pat the skin as dry as you can get it.","Get a large heavy based frying pan or skillet and place it over a high heat. Add 2 or 3 tablespoons of olive oil and when it's hot, add the chicken, skin side down. Don't overcrowd the pan; if it's too small, do it in batches. Press the chicken gently to ensure the skin is lying flat, and cook like this for about 20 seconds. Now turn the heat to medium/low. Cook for about 5 minutes like this, ensuring that the heat isn't too high. You want the skin crispy, but not black! When you can see that the flesh side is about half cooked from beneath, flip the chicken and turn the heat right down. Cook for another 4 or 5 minutes, until the chicken is cooked through.","Finish the butter bean stew by adding the balsamic vinegar and diced chorizo and stir through. To serve, put a couple of ladlefuls of the stew into each bowl, then carve the chicken into strips. Divide between the bowls, and garnish with the basil leaves and a drizzle of extra virgin olive oil."]
-    }
-  ]
+    "tags": [
+      "fish",
+      "soup",
+      "paprika",
+      "saffron,"
+    ],
+    "recipeIngredient": [
+      "1kg small white fish, such as John Dory, hake, bream",
+      "1 small tin anchovies, drained but reserve the oil",
+      "1 tin sardines",
+      "2 medium carrots, roughly chopped",
+      "2 medium tomatoes, roughly chopped",
+      "1 bulb fennel, roughly chopped",
+      "1 small leek, roughly chopped",
+      "1 medium onion, roughly chopped",
+      "8 cloves garlic, peeled and crushed",
+      "1 bunch thyme",
+      "2 teaspoons paprika",
+      "1 large pinch saffron",
+      "crusty bread, for toasting",
+      "6 tablespoons black olive tapenade",
+      "extra virgin olive oil",
+      "sea salt and freshly cracked black pepper"
+    ],
+    "recipeInstructions": [
+      "Get the bread toasted and spread it with the tapenade. To garnish the soup, sprinkle over some paprika and the reserved thyme leaves, and drizzle some olive oil.",
+      "Using a pair of kitchen scissors, cut off all the fins and sharp bits from the fish and discard them. Remove the innards, gills and eyeballs and discard those also. Wash the fish thoroughly under running cold water, then drain in a colander. If you didn't manage to source any small fish (about the size of your palm or smaller), cut the fish into chunks then place in a deep-sized tray or large bowl. Pick some thyme leaves and reserve them to use as garnish at the end. Add the carrots, tomatoes, fennel, leek, onion, garlic, thyme, paprika, saffron, about 6 tablespoons of olive oil and a generous pinch of sea salt to the fish and mix thoroughly. Cover and leave in the fridge for 12 hours, mixing it occasionally.",
+      "Heat the oven to 200C. Carefully separate the vegetables from the fish. Place the fish in a roasting tray and roast in the oven for 30-40 minute, or until golden. Meanwhile, place a large, heavy-based pot or casserole dish over a medium-high heat and add a tablespoon of olive oil. Wait 1 minute for the oil to heat up, then add the anchovies plus about a tablespoon of the oil from the tin. Stir-and-fry until the anchovies have broken down into a nice sticky paste, then add the rest of the vegetables. Add another pinch of salt, then cook over a medium heat for about 15-20 minutes, stirring frequently, until the vegetables are soft and sweet and starting to caramelise.",
+      "At this point, the fish should be ready. Add the roasted pieces to the pot with the vegetables, and drain the tin of sardines and add that too. Mix well, then cover with cold water. Bring to the boil, skimming and froth that rises to the surface. Once boiling, turn down to a gentle simmer and cook like this for 1.5 hours, topping up with water to keep the ingredients _just_ covered. The bones of the fish should be very soft and almost mushy.",
+      "Blend the soup, in batches if need be, and pass through a fine sieve. It's very important to use a _fine mesh_ sieve here as you don't want any of the coarse stuff in the soup."
+    ]
+  }
+]

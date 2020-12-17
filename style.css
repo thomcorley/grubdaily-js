@@ -987,12 +987,12 @@ body {
 .post.single .post-meta .tags span, .page.single .post-meta .tags span {
   display: inline-block;
 }
-.post.single .post-meta .tags span:first-of-type:before, .page.single .post-meta .tags span:first-of-type:before {
+/*.post.single .post-meta .tags span:first-of-type:before, .page.single .post-meta .tags span:first-of-type:before {
   content: "Tags: ";
-}
-.post.single .post-meta .tags span:after, .page.single .post-meta .tags span:after {
+}*/
+/*.post.single .post-meta .tags span:after, .page.single .post-meta .tags span:after {
   content: ",";
-}
+}*/
 .post.single .post-meta .tags span:last-of-type:after, .page.single .post-meta .tags span:last-of-type:after {
   content: none;
 }
@@ -1097,6 +1097,7 @@ body {
 }
 .post.single .post-content ul li, .post.single .post-content ol li, .post.single .page-content ul li, .post.single .page-content ol li, .page.single .post-content ul li, .page.single .post-content ol li, .page.single .page-content ul li, .page.single .page-content ol li {
   margin: 5px 0;
+  list-style-type: none;
 }
 .post.single .post-content ul li > code, .post.single .post-content ol li > code, .post.single .page-content ul li > code, .post.single .page-content ol li > code, .page.single .post-content ul li > code, .page.single .post-content ol li > code, .page.single .page-content ul li > code, .page.single .page-content ol li > code {
   font-size: 14px;
