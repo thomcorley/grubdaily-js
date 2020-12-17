@@ -9,8 +9,8 @@ function displayThumbnail(recipe) {
   article.innerHTML = `
     <h2 class="post-title">${recipe.name}</h2>
 
-    <div class="post-content">
-      <p><img src="${recipe.image}" alt="${recipe.name}" /></p>
+    <div class="thumbnail">
+      <p><img src="${recipe.image}" alt="${recipe.name}"/></p>
     </div>
   `
 

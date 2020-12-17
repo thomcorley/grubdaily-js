@@ -58,6 +58,12 @@ header, nav, section, main, article, aside, figure, footer, iframe, object, svg 
   margin: 0;
 }
 
+.thumbnail img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
 .clear:before,
 .clear:after {
   content: "";
