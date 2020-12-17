@@ -6,7 +6,9 @@ export function displayThumbnail(recipe) {
 
   article.innerHTML = `
     <div class="thumbnail">
-      <p><img src="${recipe.image}" alt="${recipe.name}" title="${recipe.name}"/></p>
+      <a href="/recipe.html">
+        <img src="${recipe.image}" alt="${recipe.name}" title="${recipe.name}"/>
+      </a>
     </div>
   `
 
