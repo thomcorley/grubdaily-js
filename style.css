@@ -1097,7 +1097,6 @@ body {
 }
 .post.single .post-content ul li, .post.single .post-content ol li, .post.single .page-content ul li, .post.single .page-content ol li, .page.single .post-content ul li, .page.single .post-content ol li, .page.single .page-content ul li, .page.single .page-content ol li {
   margin: 5px 0;
-  list-style-type: none;
 }
 .post.single .post-content ul li > code, .post.single .post-content ol li > code, .post.single .page-content ul li > code, .post.single .page-content ol li > code, .page.single .post-content ul li > code, .page.single .post-content ol li > code, .page.single .page-content ul li > code, .page.single .page-content ol li > code {
   font-size: 14px;
