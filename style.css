@@ -987,12 +987,12 @@ body {
 .post.single .post-meta .tags span, .page.single .post-meta .tags span {
   display: inline-block;
 }
-.post.single .post-meta .tags span:first-of-type:before, .page.single .post-meta .tags span:first-of-type:before {
+/*.post.single .post-meta .tags span:first-of-type:before, .page.single .post-meta .tags span:first-of-type:before {
   content: "Tags: ";
-}
-.post.single .post-meta .tags span:after, .page.single .post-meta .tags span:after {
+}*/
+/*.post.single .post-meta .tags span:after, .page.single .post-meta .tags span:after {
   content: ",";
-}
+}*/
 .post.single .post-meta .tags span:last-of-type:after, .page.single .post-meta .tags span:last-of-type:after {
   content: none;
 }
