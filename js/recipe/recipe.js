@@ -1,6 +1,6 @@
 import recipe_data from "../recipe_data.js"
-import { displayMetadata }  from "./metadata.js"
-import { displayImage } from "./image.js"
+import { metadata }  from "./metadata.js"
+import { image } from "./image.js"
 import { displayIntroduction } from "./introduction.js"
 import { displayIngredients } from "./ingredients.js"
 import { displayMethodSteps } from "./method_steps.js"
@@ -16,12 +16,15 @@ export function recipe() {
 let current_recipe = recipe();
 current_recipe.published = true; // recipe is published by default
 
-displayMetadata(current_recipe);
-
 // TODO: populate these sections:
 // Admin Panel (previous, next, publish, unpublish, edit)
 
-displayImage(current_recipe);
-displayIntroduction(current_recipe);
-displayIngredients(current_recipe);
-displayMethodSteps(current_recipe);
+function displayRecipe(recipe) {
+  image(recipe);
+  metadata(recipe);
+  // displayIntroduction(recipe);
+  // displayIngredients(recipe);
+  // displayMethodSteps(recipe);
+};
+
+displayRecipe(current_recipe);

@@ -1,31 +1,54 @@
-export function displayMetadata(recipe) {
-  // title
-  document.querySelector(".post-title").innerHTML = recipe.name;
+export function metadata(recipe) {
 
-  // date published
-  const date = new Date(recipe.datePublished); // might as well use const here if we're not planning to change it
-  document.querySelector("time[itemprop='datePublished']").innerHTML = date.toDateString();
-
-  // category
-  document.querySelector("span.category").innerHTML = `Serves: ${recipe.recipeYield} /`;
-
-  // hide the published tag if the recipe is not published
-  if (recipe.published == false) {
-    document.querySelector("p.published-tag").style.display = "none";
+  const data = {
+    publishedLabelSelector: "p.published-tag",
+    parentTagElementSelector: "span.tags",
+    parentTagElementLabel: "Tags: ",
+    tagNames: recipe.tags,
+    metaElements: [
+      {
+        selector: ".post-title",
+        data: recipe.name
+      },
+      {
+        selector: "time[itemprop='datePublished']",
+        data: new Date(recipe.datePublished).toDateString()
+      },
+      {
+        selector: "span.category",
+        data: `Serves: ${recipe.recipeYield} /`
+      }
+    ]
   }
 
-  // tags
-  const tagParentElement = document.querySelector("span.tags");
-  tagParentElement.innerHTML = "Tags: ";
-  const lastTag = recipe.tags.pop();
+  let publishedLabel = (published, selector) => {
+    if (published == false) {
+      document.querySelector(selector).style.display = "none";
+    }
+  }
 
-  recipe.tags.forEach(function(tag) {
-    const tagElement = document.createElement("span");
-    tagElement.innerHTML = `${tag},&nbsp`;
-    tagParentElement.appendChild(tagElement);
-  })
+  let parentTagElement = (selector, label) => {
+    const element = document.querySelector(selector);
+    element.innerHTML = label;
+    return element
+  }
 
-  const lastTagElement = document.createElement("span");
-  lastTagElement.innerHTML = ` ${lastTag}`
-  tagParentElement.appendChild(lastTagElement);
+  let populateMetaElements = (metaElements) => {
+    metaElements.forEach(({ selector, data }) => {
+      document.querySelector(selector).innerHTML = data;
+    });
+  }
+
+  let populateTags = (tagNames, parentElement) => {
+    tagNames.forEach((tagName) => {
+      const element = document.createElement("span");
+      element.innerHTML = `${tagName},&nbsp`;
+      parentElement.appendChild(element);
+    })
+  };
+
+  publishedLabel(recipe.published, data.publishedLabelSelector);
+  populateMetaElements(data.metaElements);
+  const parentElement = parentTagElement(data.parentTagElementSelector, data.parentTagElementLabel);
+  populateTags(data.tagNames, parentElement)
 };
