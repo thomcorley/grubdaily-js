@@ -1,5 +1,4 @@
 export function introduction(recipe) {
-  data =
   // introduction paragraphs
   document.querySelector("div.first-paragraph p").innerHTML = recipe.description[0];
 

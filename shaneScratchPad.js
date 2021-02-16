@@ -25,7 +25,9 @@ const render = (target, {
   children,
   innerHTML
 }) => {
+
   const el = document.createElement(element);
+
   if (innerHTML) {
     el.innerHTML = innerHTML;
   } else if (children.length > 0) {
@@ -33,8 +35,10 @@ const render = (target, {
       el.appendChild(render(el, child));
     })
   }
+
   el.className = className;
   target.appendChild(el);
+
   return el
 }
 
