@@ -1,7 +1,7 @@
 import recipe_data from "../recipe_data.js"
 import { metadata }  from "./metadata.js"
 import { image } from "./image.js"
-import { displayIntroduction } from "./introduction.js"
+import { introduction } from "./introduction.js"
 import { displayIngredients } from "./ingredients.js"
 import { displayMethodSteps } from "./method_steps.js"
 
@@ -22,7 +22,7 @@ current_recipe.published = true; // recipe is published by default
 function displayRecipe(recipe) {
   image(recipe);
   metadata(recipe);
-  // displayIntroduction(recipe);
+  introduction(recipe);
   // displayIngredients(recipe);
   // displayMethodSteps(recipe);
 };

@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "name": "grubdaily-js",
+  "version": "1.0.0",
+  "description": "A slimline JS version of grubdaily.com",
+  "main": "index.html",
+  "repository": "git@github.com:thomcorley/grubdaily-js.git",
+  "author": "Tom Corley <thomcorley@gmail.com>",
+  "license": "MIT"
+}
