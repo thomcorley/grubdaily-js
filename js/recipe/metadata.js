@@ -37,9 +37,21 @@ export function metadata(recipe) {
   };
 
   const metaParentElement = document.querySelector("div.post-meta.clear") // TODO: move this to a data hash
+
+  // TAGS
   let tagElements = tags.map(tag => span({innerHTML: `${tag}&nbsp`}));
   const tagParentElement = render(metaParentElement, span({className: "tags", innerHTML: "Tags:&nbsp"}));
   render(tagParentElement, span({children: tagElements}));
+
+  // TITLE
+  // TODO: fill out this section
+
+  // DATE PUBLISHED
+  // TODO: fill out this section
+
+  // CATEGORY
+  // TODO: fill out this section
+
 
   const data = {
     publishedLabelSelector: "p.published-tag",
