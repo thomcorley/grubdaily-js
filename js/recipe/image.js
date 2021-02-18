@@ -1,18 +1,16 @@
-// display the image
+import { htmlElement } from "../htmlRenderer.js"
+import { render } from "../htmlRenderer.js"
+
 export function image(recipe) {
-  const imageElement = document.querySelector("div.recipe-image");
 
   const imageAttributes = {
-    url: recipe.image,
-    alt: recipe.name
+    src: recipe.image,
+    alt: recipe.name,
+    width: "900px",
+    style: "padding-top: 20px;"
   }
 
-  imageElement.innerHTML = `
-    <img
-      src="${imageAttributes.url}"
-      width="900px"
-      alt="${imageAttributes.alt}"
-      style="padding-top: 20px;"
-    </img>
-  `;
+  const recipeParentElement = document.querySelector("article.post.single");
+  const imageDiv = render(recipeParentElement, htmlElement("div")({className: "recipe-image"}));
+  render(imageDiv, htmlElement("img")({ attributes: imageAttributes }));
 };
