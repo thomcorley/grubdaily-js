@@ -25,16 +25,49 @@
       </div>
     </header>
     <section class="delicious">
+
     <main role="main">
       <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-        <header class="post-header">
-          <h1 class="post-title" itemprop="name headline"><!-- element is filled by JS --></h1>
+
+        <div class="post-content" itemprop="text">
+          <div class="recipe-image"></div>
+          <div class="introduction-paragraphs">
+            <div class="first-paragraph"><p></p></div>
+          </div>
+          <hr />
+          <div id="ingredients"></div>
+           <ul id="ingredients-list"></ul>
+          <hr />
+          <div id="method-steps"></div>
+           <ol id="method-steps"></ol>
+        </div>
+      </article>
+    </main>
+
+    </section>
+
+    <footer>
+      <div class="footer clear">
+        <div class="footer-left-column">
+            <a href="/">
+              <img width="80px" src="https://s3.eu-west-2.amazonaws.com/grubdaily/favicon_large.jpg" />
+            </a>
+            <p>&copy; 2020</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/recipe/recipe.js"></script>
+  </body>
+</html>
+<!--        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline"></h1>
           <div class="post-meta clear">
-            <time datetime="2020-12-16T09:09:00+00:00" itemprop="datePublished"><!-- element is filled by JS --></time>
-            <span class="category"><!-- element is filled by JS --></span>
+            <time datetime="2020-12-16T09:09:00+00:00" itemprop="datePublished"></time>
+            <span class="category"></span>
               <p class="published-tag">/ Published</p>
 
-<!--               <a href="/recipes/126" class="previous print">
+               <a href="/recipes/126" class="previous print">
                 Next
               </a>
 
@@ -52,37 +85,21 @@
 
               <a href="/recipes/126" class="previous print">
                 Previous
-              </a> -->
+              </a>
           </div>
         </header>
 
+
         <div class="post-content" itemprop="text">
-          <div class="recipe-image"><!-- element is filled by JS --></div>
+          <div class="recipe-image"> element is filled by JS</div>
           <div class="introduction-paragraphs">
-            <div class="first-paragraph"><p><!-- element is filled by JS --></p></div>
+            <div class="first-paragraph"><p> element is filled by JS</p></div>
           </div>
           <hr />
           <div id="ingredients"></div>
-          <!-- <ul id="ingredients-list"></ul> -->
+           <ul id="ingredients-list"></ul>
           <hr />
           <div id="method-steps"></div>
-          <!-- <ol id="method-steps"></ol> -->
+           <ol id="method-steps"></ol>
         </div>
-      </article>
-    </main>
-    </section>
-
-    <footer>
-      <div class="footer clear">
-        <div class="footer-left-column">
-            <a href="/">
-              <img width="80px" src="https://s3.eu-west-2.amazonaws.com/grubdaily/favicon_large.jpg" />
-            </a>
-            <p>&copy; 2020</p>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="../js/recipe/recipe.js"></script>
-  </body>
-</html>
+-->

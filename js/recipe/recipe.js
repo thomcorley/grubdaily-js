@@ -20,9 +20,9 @@ current_recipe.published = true; // recipe is published by default
 // Admin Panel (previous, next, publish, unpublish, edit)
 
 function displayRecipe(recipe) {
-  image(recipe);
   metadata(recipe);
-  introduction(recipe);
+  image(recipe);
+  // introduction(recipe);
   // displayIngredients(recipe);
   // displayMethodSteps(recipe);
 };

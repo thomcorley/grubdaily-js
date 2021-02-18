@@ -1,16 +1,23 @@
 export function metadata(recipe) {
   const tags = recipe.tags;
+  const title = recipe.name;
+  const publishedAt = new Date(recipe.datePublished).toDateString();
+  const serves = recipe.recipeYield;
 
   // Create a basic function that returns the information needed for a generic HTML element using nested arrow functions
 
-  const htmlElement = (element) => ({className = "", children = [], innerHTML }) => ({
+  const htmlElement = (element) => ({className = "", children = [], innerHTML, attributes = {} }) => ({
     element,
     className,
     children,
-    innerHTML
+    innerHTML,
+    attributes
   });
 
   const span = htmlElement("span");
+  const header = htmlElement("header");
+  const div = htmlElement("div");
+  const time = htmlElement("time");
 
   // Create a `render` method which should takes a target element abd a hash of HTML params.
   // This method now creates the element and populates it with innerHtml, if present, or appends with children
@@ -36,72 +43,23 @@ export function metadata(recipe) {
     return el
   };
 
-  const metaParentElement = document.querySelector("div.post-meta.clear") // TODO: move this to a data hash
-
-  // TAGS
-  let tagElements = tags.map(tag => span({innerHTML: `${tag}&nbsp`}));
-  const tagParentElement = render(metaParentElement, span({className: "tags", innerHTML: "Tags:&nbsp"}));
-  render(tagParentElement, span({children: tagElements}));
+  const recipeParentElement = document.querySelector("article.post.single");
 
   // TITLE
-  // TODO: fill out this section
+  render(recipeParentElement, htmlElement("h1")({className: "post-title", innerHTML: title}));
 
-  // DATE PUBLISHED
-  // TODO: fill out this section
+  // METADATA
+  const metaParentElement = render(recipeParentElement, div({className: "post-meta clear"}));
 
-  // CATEGORY
-  // TODO: fill out this section
+    // Date published
+  const datePublishedElement = render(metaParentElement, time({innerHTML: publishedAt}));
+  datePublishedElement.setAttribute("datetime", "2020-12-16T09:09:00+00:00");
 
+    // Tags
+  const tagElements = tags.map(tag => span({innerHTML: `${tag}&nbsp`}));
+  const tagParentElement = render(metaParentElement, span({className: "tags", innerHTML: "/ Tags: &nbsp"}));
+  render(tagParentElement, span({children: tagElements}));
 
-  const data = {
-    publishedLabelSelector: "p.published-tag",
-    parentTagElementSelector: "span.tags",
-    parentTagElementLabel: "Tags: ",
-    tagNames: recipe.tags,
-    metaElements: [
-      {
-        selector: ".post-title",
-        data: recipe.name
-      },
-      {
-        selector: "time[itemprop='datePublished']", // check what to do with itemprop, it may need to be another arg in the render method
-        data: new Date(recipe.datePublished).toDateString(),
-      },
-      {
-        selector: "span.category",
-        data: `Serves: ${recipe.recipeYield} /`
-      }
-    ]
-  }
-
-  // let publishedLabel = (published, selector) => {
-  //   if (published == false) {
-  //     document.querySelector(selector).style.display = "none";
-  //   }
-  // }
-
-  // let parentTagElement = (selector, label) => {
-  //   const element = document.querySelector(selector);
-  //   element.innerHTML = label;
-  //   return element
-  // }
-
-  // let populateMetaElements = (metaElements) => {
-  //   metaElements.forEach(({ selector, data }) => {
-  //     document.querySelector(selector).innerHTML = data;
-  //   });
-  // }
-
-  // let populateTags = (tagNames, parentElement) => {
-  //   tagNames.forEach((tagName) => {
-  //     const element = document.createElement("span");
-  //     element.innerHTML = `${tagName},&nbsp`;
-  //     parentElement.appendChild(element);
-  //   })
-  // };
-
-  // publishedLabel(recipe.published, data.publishedLabelSelector);
-  // populateMetaElements(data.metaElements);
-  // const parentElement = parentTagElement(data.parentTagElementSelector, data.parentTagElementLabel);
-  // populateTags(data.tagNames, parentElement)
+    // Serves
+  render(metaParentElement, span({className: "category", innerHTML: `Serves:&nbsp${serves}`}));
 };
