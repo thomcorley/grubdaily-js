@@ -11,6 +11,15 @@ const htmlElement = (element) => ({
   attributes
 });
 
+const els = {
+  span: htmlElement("span"),
+  header: htmlElement("header"),
+  div: htmlElement("div"),
+  time: htmlElement("time"),
+  p: htmlElement("p"),
+  br: htmlElement("br"),
+};
+
 const render = (target, { element, className, children, innerHTML, attributes }) => {
   const el = document.createElement(element);
   const attributeKeys = Object.keys(attributes);
@@ -39,4 +48,4 @@ const render = (target, { element, className, children, innerHTML, attributes })
   return el
 };
 
-export { htmlElement, render };
+export { htmlElement, els, render };
