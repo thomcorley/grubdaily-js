@@ -1,5 +1,6 @@
-import { htmlElement } from "../htmlRenderer.js"
 import { render } from "../htmlRenderer.js"
+import { htmlElement } from "../htmlRenderer.js"
+import { span, header, div, time, p, br, h1 } from "../htmlRenderer.js"
 
 export function image(recipe) {
 

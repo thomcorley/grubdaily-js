@@ -11,14 +11,13 @@ const htmlElement = (element) => ({
   attributes
 });
 
-const els = {
-  span: htmlElement("span"),
-  header: htmlElement("header"),
-  div: htmlElement("div"),
-  time: htmlElement("time"),
-  p: htmlElement("p"),
-  br: htmlElement("br"),
-};
+const span = htmlElement("span")
+const header = htmlElement("header")
+const div = htmlElement("div")
+const time = htmlElement("time")
+const p = htmlElement("p")
+const br = htmlElement("br")
+const h1 = htmlElement("h1")
 
 const render = (target, { element, className, children, innerHTML, attributes }) => {
   const el = document.createElement(element);
@@ -48,4 +47,14 @@ const render = (target, { element, className, children, innerHTML, attributes })
   return el
 };
 
-export { htmlElement, els, render };
+export {
+  htmlElement,
+  render,
+  span,
+  header,
+  div,
+  time,
+  p,
+  br,
+  h1
+};
