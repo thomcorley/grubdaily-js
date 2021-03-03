@@ -4,6 +4,7 @@ import { image } from "./image.js"
 import { introduction } from "./introduction.js"
 import { displayIngredients } from "./ingredients.js"
 import { displayMethodSteps } from "./method_steps.js"
+import { render } from "../htmlRenderer.js"
 
 export function recipe() {
   let params = new URLSearchParams(window.location.search);
@@ -20,8 +21,10 @@ current_recipe.published = true; // recipe is published by default
 // Admin Panel (previous, next, publish, unpublish, edit)
 
 function displayRecipe(recipe) {
+  const recipeParentElement = document.querySelector("article.post.single");
+
   metadata(recipe);
-  image(recipe);
+  render(recipeParentElement, image(recipe))
   introduction(recipe);
   // displayIngredients(recipe);
   // displayMethodSteps(recipe);
