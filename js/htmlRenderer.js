@@ -17,10 +17,11 @@ const htmlElement = (element) => ({
   attributes
 });
 
+export const time = htmlElement("time")
+// export const time = (datetime) => htmlElement("time")({attributes: {datetime: "2020-12-16T09:09:00+00:00"}})
 export const span = htmlElement("span")
 export const header = htmlElement("header")
 export const div = htmlElement("div")
-export const time = htmlElement("time")
 export const p = htmlElement("p")
 export const br = htmlElement("br")
 export const h1 = htmlElement("h1")
