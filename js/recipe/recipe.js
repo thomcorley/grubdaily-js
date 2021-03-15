@@ -24,7 +24,6 @@ function displayRecipe(recipe) {
   metadata(recipe);
   image(recipe);
   introduction(recipe);
-  introduction(recipe);
   // displayIngredients(recipe);
   // displayMethodSteps(recipe);
 };

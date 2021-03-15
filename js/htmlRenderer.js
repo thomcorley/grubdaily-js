@@ -48,7 +48,6 @@ export const render = (target, { element, className, children, innerHTML, attrib
     el.className = className;
   }
 
-
   target.appendChild(el);
 
   return el
