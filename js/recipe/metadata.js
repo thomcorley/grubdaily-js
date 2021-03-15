@@ -1,31 +1,27 @@
+import { recipeParentElement } from "../constants.js"
 import { render } from "../htmlRenderer.js"
-import { htmlElement } from "../htmlRenderer.js"
-import { span, header, div, time, p, br, h1 } from "../htmlRenderer.js"
+import * as htmlTag from "../htmlRenderer.js"
+import { h1 } from "../htmlRenderer.js"
 
-export function metadata(recipe) {
-  // Recipe Data
-  const tags = recipe.tags;
-  const title = recipe.name;
-  const publishedAt = new Date(recipe.datePublished).toDateString();
-  const serves = recipe.recipeYield;
+export function metadata({ tags, name, datePublished, recipeYield }) {
+  // Date
+  const date = new Date(datePublished).toDateString();
 
-  const recipeParentElement = document.querySelector("article.post.single");
+  // Title
+  render(recipeParentElement, h1({className: "post-title", innerHTML: name}));
 
-  // TITLE
-  render(recipeParentElement, h1({className: "post-title", innerHTML: title}));
-
-  // METADATA
-  const metaParentElement = render(recipeParentElement, div({className: "post-meta clear"}));
+  // Metadata
+  const metaParentElement = render(recipeParentElement, htmlTag.div({className: "post-meta clear"}));
 
   // Date published
-  const datePublishedElement = render(metaParentElement, time({innerHTML: publishedAt}));
+  const datePublishedElement = render(metaParentElement, htmlTag.time({innerHTML: date}));
   datePublishedElement.setAttribute("datetime", "2020-12-16T09:09:00+00:00");
 
   // Tags
-  const tagElements = tags.map(tag => span({innerHTML: `${tag}&nbsp`}));
-  const tagParentElement = render(metaParentElement, span({className: "tags", innerHTML: "/ Tags: &nbsp"}));
-  render(tagParentElement, span({children: tagElements}));
+  const tagElements = tags.map(tag => htmlTag.span({innerHTML: `${tag}&nbsp`}));
+  const tagParentElement = render(metaParentElement, htmlTag.span({className: "tags", innerHTML: "/ Tags: &nbsp"}));
+  render(tagParentElement, htmlTag.span({children: tagElements}));
 
   // Serves
-  render(metaParentElement, span({className: "category", innerHTML: `Serves:&nbsp${serves}`}));
+  render(metaParentElement, htmlTag.span({className: "category", innerHTML: `Serves:&nbsp${recipeYield}`}));
 };

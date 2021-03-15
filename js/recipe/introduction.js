@@ -1,16 +1,18 @@
+import { recipeParentElement } from "../constants.js"
 import { render } from "../htmlRenderer.js"
-import { htmlElement } from "../htmlRenderer.js"
-import { span, header, div, time, p, br, h1 } from "../htmlRenderer.js"
+import * as els from "../htmlRenderer.js"
 
 export function introduction(recipe) {
-  const recipeParentElement = document.querySelector("article.post.single");
+  const firstParagraphElement = els.p({innerHTML: recipe.description[0]});
+  const firstParagraphDiv = els.div({className: "first-paragraph", children: [firstParagraphElement]});
+
   const latterDescriptionParagraphs = recipe.description.slice(1);
 
-  const firstParagraphElement = p({innerHTML: recipe.description[0]});
-  const firstParagraphDiv = div({className: "first-paragraph", children: [firstParagraphElement]});
-  const introductionParentElement = render(recipeParentElement, div({className: "introduction-paragraphs", children: [firstParagraphDiv]}));
-
-  latterDescriptionParagraphs.forEach(paragraph => {
-    render(introductionParentElement, p({innerHTML: paragraph}));
+  const latterParagraphElements = latterDescriptionParagraphs.map(paragraph => {
+    return els.p({innerHTML: paragraph});
   });
+
+  const children = [firstParagraphDiv].concat(latterParagraphElements);
+
+  render(recipeParentElement, els.div({className: "introduction-paragraphs", children: children}));
 };

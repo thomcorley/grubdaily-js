@@ -1,3 +1,9 @@
+const clearElements = (elements) => {
+  while (elements.firstChild) {
+    elements.removeChild(element.lastChild);
+  }
+};
+
 const htmlElement = (element) => ({
   className = "",
   children = [],
@@ -11,15 +17,16 @@ const htmlElement = (element) => ({
   attributes
 });
 
-const span = htmlElement("span")
-const header = htmlElement("header")
-const div = htmlElement("div")
-const time = htmlElement("time")
-const p = htmlElement("p")
-const br = htmlElement("br")
-const h1 = htmlElement("h1")
+export const span = htmlElement("span")
+export const header = htmlElement("header")
+export const div = htmlElement("div")
+export const time = htmlElement("time")
+export const p = htmlElement("p")
+export const br = htmlElement("br")
+export const h1 = htmlElement("h1")
+export const img = htmlElement("img")
 
-const render = (target, { element, className, children, innerHTML, attributes }) => {
+export const render = (target, { element, className, children, innerHTML, attributes }) => {
   const el = document.createElement(element);
   const attributeKeys = Object.keys(attributes);
 
@@ -45,16 +52,4 @@ const render = (target, { element, className, children, innerHTML, attributes })
   target.appendChild(el);
 
   return el
-};
-
-export {
-  htmlElement,
-  render,
-  span,
-  header,
-  div,
-  time,
-  p,
-  br,
-  h1
 };
