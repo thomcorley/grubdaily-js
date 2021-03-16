@@ -1,15 +1,19 @@
+import { recipeParentElement } from "./constants.js"
+
 const clearElements = (elements) => {
   while (elements.firstChild) {
-    elements.removeChild(element.lastChild);
+    elements.removeChild(elements.lastChild);
   }
 };
 
 const htmlElement = (element) => ({
+  id = "",
   className = "",
   children = [],
   innerHTML,
   attributes = {}
 }) => ({
+  id,
   element,
   className,
   children,
@@ -17,17 +21,26 @@ const htmlElement = (element) => ({
   attributes
 });
 
-export const time = htmlElement("time")
-// export const time = (datetime) => htmlElement("time")({attributes: {datetime: "2020-12-16T09:09:00+00:00"}})
-export const span = htmlElement("span")
-export const header = htmlElement("header")
-export const div = htmlElement("div")
-export const p = htmlElement("p")
-export const br = htmlElement("br")
-export const h1 = htmlElement("h1")
-export const img = htmlElement("img")
+// export const time = htmlElement("time")
+export const time = ({datetime, ...rest}) => htmlElement("time")({...rest, attributes: {...rest.attributes, datetime: datetime}});
+export const span = htmlElement("span");
+export const header = htmlElement("header");
+export const div = htmlElement("div");
+export const p = htmlElement("p");
+export const br = htmlElement("br");
+export const hr = htmlElement("hr");
+export const h1 = htmlElement("h1");
+export const img = htmlElement("img");
+export const ul = htmlElement("ul");
+export const ol = htmlElement("ol");
+export const li = htmlElement("li");
 
-export const render = (target, { element, className, children, innerHTML, attributes }) => {
+export const render = (target, { element, id, className, children, innerHTML, attributes }) => {
+  // clearElements(target);
+  // TODO: think about how to use clearElement to remove only the elements that we want
+  // Try grabbing the document to create a diff, and only render the element if it doesn't exist already
+  // See how this is done in React
+
   const el = document.createElement(element);
   const attributeKeys = Object.keys(attributes);
 
@@ -44,6 +57,10 @@ export const render = (target, { element, className, children, innerHTML, attrib
       el.appendChild(render(el, child));
     })
   };
+
+  if (id != "") {
+    el.id = id;
+  }
 
   if (className != "") {
     el.className = className;

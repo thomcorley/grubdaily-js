@@ -4,8 +4,8 @@ import { recipeParentElement } from "../constants.js"
 import { metadata }  from "./metadata.js"
 import { image } from "./image.js"
 import { introduction } from "./introduction.js"
-import { displayIngredients } from "./ingredients.js"
-import { displayMethodSteps } from "./method_steps.js"
+import { ingredients } from "./ingredients.js"
+import { methodSteps } from "./method_steps.js"
 
 export function recipe() {
   let params = new URLSearchParams(window.location.search);
@@ -18,15 +18,12 @@ export function recipe() {
 let current_recipe = recipe();
 current_recipe.published = true; // recipe is published by default
 
-// TODO: populate these sections:
-// Admin Panel (previous, next, publish, unpublish, edit)
-
 function displayRecipe(recipe) {
   metadata(recipe);
   render(recipeParentElement, image(recipe));
-  introduction(recipe);
-  // displayIngredients(recipe);
-  // displayMethodSteps(recipe);
+  render(recipeParentElement, introduction(recipe));
+  render(recipeParentElement, ingredients(recipe));
+  render(recipeParentElement, methodSteps(recipe));
 };
 
 displayRecipe(current_recipe);
