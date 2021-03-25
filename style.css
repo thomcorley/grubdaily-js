@@ -650,6 +650,7 @@ body {
   margin: 4px 0 0;
 }
 .index .newest-recipes .post .post-image {
+  padding-top: 30px;
   height: 100%;
 }
 .index .newest-recipes .post .post-image a {

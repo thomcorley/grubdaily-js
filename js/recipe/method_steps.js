@@ -1,11 +1,18 @@
-export function displayMethodSteps(recipe) {
-  // Method steps list
-  const instructionsList = document.querySelector("ol");
+import * as els from "../htmlRenderer.js"
 
-   recipe.recipeInstructions.forEach(function(instruction) {
-    let instructionElement = document.createElement("li");
-    instructionElement.innerHTML = instruction;
-    instructionsList.appendChild(instructionElement);
-    instructionsList.appendChild(document.createElement("br"))
-   });
+export function methodSteps(recipe) {
+  const instructions = recipe.recipeInstructions.map(instruction => (
+    els.li({
+      className: "method-step",
+      innerHTML: instruction })
+  ));
+
+  return els.div({
+    className: "method-steps",
+    children: [
+      els.ol({
+        children: instructions
+      })
+    ]
+  });
 };

@@ -1,13 +1,19 @@
-export function displayIntroduction(recipe) {
-  // introduction paragraphs
-  document.querySelector("div.first-paragraph p").innerHTML = recipe.description[0];
+import * as els from "../htmlRenderer.js"
 
-  const parentElement = document.querySelector("div.introduction-paragraphs");
+export function introduction(recipe) {
   const latterDescriptionParagraphs = recipe.description.slice(1);
 
-  latterDescriptionParagraphs.forEach( function(paragraph) {
-    let paragraphElement = document.createElement("p");
-    paragraphElement.innerHTML = paragraph;
-    parentElement.appendChild(paragraphElement);
+  return els.div({
+    className: "introduction-paragraphs",
+    children: [
+      els.div({
+        className: "first-paragraph",
+        children: [
+          els.p({ innerHTML: recipe.description[0] })
+        ]
+      }),
+      ...latterDescriptionParagraphs.map(paragraph => els.p({ innerHTML: paragraph }) ),
+      els.hr({}),
+    ]
   });
 };

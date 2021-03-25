@@ -1,31 +1,37 @@
-export function displayMetadata(recipe) {
-  // title
-  document.querySelector(".post-title").innerHTML = recipe.name;
+import { recipeParentElement } from "../constants.js"
+import { render } from "../htmlRenderer.js"
+import * as els from "../htmlRenderer.js"
 
-  // date published
-  let date = new Date(recipe.datePublished);
-  document.querySelector("time[itemprop='datePublished']").innerHTML = date.toDateString();
+export function metadata({ tags, name, datePublished, recipeYield }) {
+  render(recipeParentElement, els.h1({className: "post-title", innerHTML: name}));
+  // TODO: Instead of passing siblings in as an extra argument, we could just create a containing div and render just that.
+  // Think about how we would tell `render` to render the children but not the parent element itself.
 
-  // category
-  document.querySelector("span.category").innerHTML = `Serves: ${recipe.recipeYield} /`;
+  const date = new Date(datePublished).toDateString();
+  const tagElements = tags.map(tag => els.span({innerHTML: `${tag},&nbsp`})); // TODO: remove last comma
 
-  // hide the published tag if the recipe is not published
-  if (recipe.published == false) {
-    document.querySelector("p.published-tag").style.display = "none";
-  }
+  const metaChildren = [
+    els.time({
+      innerHTML: date,
+      datetime: "2020-12-16T09:09:00+00:00",
+      attributes: null
+    }),
+    els.span({
+      className: "tags",
+      innerHTML: "/ Tags: &nbsp"
+    }),
+    els.span({
+      children: [
+        els.span({
+          children: tagElements
+        })
+      ]
+    }),
+    els.span({
+      className: "category",
+      innerHTML: `Serves:&nbsp${recipeYield}`
+    })
+  ];
 
-  // tags
-  const tagParentElement = document.querySelector("span.tags");
-  tagParentElement.innerHTML = "Tags: ";
-  let lastTag = recipe.tags.pop();
-
-  recipe.tags.forEach(function(tag) {
-    let tagElement = document.createElement("span");
-    tagElement.innerHTML = `${tag},&nbsp`;
-    tagParentElement.appendChild(tagElement);
-  })
-
-  let lastTagElement = document.createElement("span");
-  lastTagElement.innerHTML = ` ${lastTag}`
-  tagParentElement.appendChild(lastTagElement);
+  render(recipeParentElement, els.div({className: "post-meta clear", children: metaChildren}));
 };

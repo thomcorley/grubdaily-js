@@ -1,11 +1,15 @@
-export function displayIngredients(recipe) {
-  // Ingredients list
-  const ingredientsList = document.querySelector("ul");
+import * as els from "../htmlRenderer.js"
 
-  recipe.recipeIngredient.forEach(function(ingredientEntry) {
-    let ingredientEntryElement = document.createElement("li");
-    ingredientEntryElement.innerHTML = ingredientEntry; // TODO: add the `edit` button at the end of this once the data store is set up
-    ingredientEntryElement.setAttribute("style", "list-style-type: none;");
-    ingredientsList.appendChild(ingredientEntryElement);
+export function ingredients({ recipeIngredient }) {
+  const children = recipeIngredient.map(ingredientEntry => els.li({ innerHTML: ingredientEntry }));
+
+  return els.div({
+    id: "ingredients",
+    children: [
+      els.ul({
+        id: "ingredients-list",
+        children: children
+      })
+    ]
   });
 };

@@ -1,13 +1,18 @@
-export function displayImage(recipe) {
-  // image
-  let imageElement = document.querySelector("div.recipe-image");
+import { recipeParentElement } from "../constants.js"
+import * as els from "../htmlRenderer.js"
 
-  imageElement.innerHTML = `
-    <img
-      src="${recipe.image}"
-      width="900px"
-      alt="${recipe.name}"
-      style="padding-top: 20px;"
-    </img>
-  `;
+export function image({image, name}) {
+  const imageAttributes = {
+    src: image,
+    alt: name,
+    width: "900px",
+    style: "padding-top: 20px;"
+  }
+
+  return els.div({
+    className: "recipe-image",
+    children: [
+      els.img({ attributes: imageAttributes })
+    ]
+  });
 };
