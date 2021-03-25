@@ -33,5 +33,5 @@ export function metadata({ tags, name, datePublished, recipeYield }) {
     })
   ];
 
-  const metaParentElement = render(recipeParentElement, els.div({className: "post-meta clear", children: metaChildren}));
+  render(recipeParentElement, els.div({className: "post-meta clear", children: metaChildren}));
 };
