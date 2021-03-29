@@ -13,19 +13,11 @@ export function metadata({ tags, name, datePublished, recipeYield }) {
   const metaChildren = [
     els.time({
       innerHTML: date,
-      datetime: "2020-12-16T09:09:00+00:00",
-      attributes: null
+      datetime: "2020-12-16T09:09:00+00:00"
     }),
     els.span({
       className: "tags",
-      innerHTML: "/ Tags: &nbsp"
-    }),
-    els.span({
-      children: [
-        els.span({
-          children: tagElements
-        })
-      ]
+      innerHTML: `Tags: ${tags.join(", ")}`
     }),
     els.span({
       className: "category",
