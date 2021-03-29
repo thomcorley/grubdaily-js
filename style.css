@@ -1,6 +1,26 @@
+.first-paragraph {
+  padding: 20px 0 0 0;
+}
+
+.introduction-paragraphs p {
+  padding: 0 0 20px 0;
+  margin: 0 10px 0 10px;
+}
+
+hr { margin: 20px 10px 20px 10px; }
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+
+#ingredients-list {
+  padding-bottom: 20px;
+  margin: 0 10px 0 30px;
+}
+
+.method-step {
+  margin: 20px 10px 0 30px;
 }
 
 body {
