@@ -3,10 +3,6 @@ import { render } from "../htmlRenderer.js"
 import * as els from "../htmlRenderer.js"
 
 export function metadata({ tags, name, datePublished, recipeYield }) {
-  render(recipeParentElement, els.h1({className: "post-title", innerHTML: name}));
-  // TODO: Instead of passing siblings in as an extra argument, we could just create a containing div and render just that.
-  // Think about how we would tell `render` to render the children but not the parent element itself.
-
   const date = new Date(datePublished).toDateString();
   const tagElements = tags.map(tag => els.span({innerHTML: `${tag},&nbsp`})); // TODO: remove last comma
 
@@ -25,5 +21,17 @@ export function metadata({ tags, name, datePublished, recipeYield }) {
     })
   ];
 
-  render(recipeParentElement, els.div({className: "post-meta clear", children: metaChildren}));
+  return els.div({
+    className: "do-not-render",
+    children: [
+      els.h1({
+        className: "post-title",
+        innerHTML: name
+      }),
+      els.div({
+        className: "post-meta clear",
+        children: metaChildren
+      })
+    ]
+  });
 };

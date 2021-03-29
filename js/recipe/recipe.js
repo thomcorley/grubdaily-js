@@ -19,7 +19,7 @@ let current_recipe = recipe();
 current_recipe.published = true; // recipe is published by default
 
 function displayRecipe(recipe) {
-  metadata(recipe);
+  render(recipeParentElement, metadata(recipe));
   render(recipeParentElement, image(recipe));
   render(recipeParentElement, introduction(recipe));
   render(recipeParentElement, ingredients(recipe));
